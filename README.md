@@ -1,1 +1,1 @@
-# jQuery-My-Summary
+# jQuery
