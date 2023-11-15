@@ -1,0 +1,9 @@
+/* p {
+    display: none;
+} */
+
+
+p,
+span {
+    display: none;
+}
