@@ -3,7 +3,45 @@
 } */
 
 
-p,
+/* p,
 span {
     display: none;
+} */
+
+
+
+
+/* div {
+    opacity: 1;   /* here it means the element will be showing 100% clear
+
+}
+
+div {
+    opacity: 0.550;
+    /* here it means the element will be showing 55% clear
+
+}
+
+div {
+    opacity: 0.33;
+    /* here it means the element will be showing 33% clear
+
+} */
+
+
+
+div {
+    margin: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+
+button {
+    margin: 10px;
+}
+
+
+span {
 }
