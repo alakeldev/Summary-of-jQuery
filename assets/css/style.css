@@ -30,13 +30,24 @@ div {
 
 
 
-div {
-    margin: 10px;
-    background-color: #eee;
-    border: 1px solid #ccc;
+.open {
     padding: 10px;
+    background-color: #DDD;
+    border: 1px solid #676767;
+    width: 600px;
+    margin: 20px auto 0;
 }
 
+.box {
+    padding: 10px;
+    background-color: #DDD;
+    border: 1px solid #676767;
+    width: 600px;
+    margin: auto;
+
+}
+
+/* 
 
 button {
     margin: 10px;
@@ -45,3 +56,4 @@ button {
 
 span {
 }
+ */

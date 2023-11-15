@@ -177,6 +177,29 @@ $(document).ready(function () {
 
     /*-------------------------------------------------------------------------------*/
 
+    //** Slide effect
+    // to make slidedown on element it must be hidden  (display: none;)
+    // slideDown(speed, Callback Function)
+    // please be note that the speed default value is always 400 ms
+    // $(".open").click(function() {
+    //     $(".box").slideDown(5000, function () {
+    //         $(".open").hide();
+    //     });
+    // });
+
+
+    // slideUp(speed, callback function)
+    // to make slideUp work on element it must be shown on the page and display: block not none
+    // slideUp(speed, Callback Function)
+    // $(".open").click(function() {
+    //     $(".box").slideUp(5000);
+    // });
+
+
+    // slideToggle(speed, callback function)  => slideDown + SlideUp (Vise Versa)
+    // $(".open").click(function() {
+    //     $(".box").slideToggle(5000)
+    // })
 
 });
 
