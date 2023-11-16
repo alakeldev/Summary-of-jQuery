@@ -372,36 +372,57 @@ $(document).ready(function () {
     // not we will explain that go to end will take the element to the last design of the element after finished in each animation Fram but
     // without going through the animation process as per below:
 
-    $("button").click(function () {
-        $("div").stop(false, true);
-    });
+    // $("button").click(function () {
+    //     $("div").stop(false, true);
+    // });
 
-    // Fram 1
-    $("div").animate({
-        width: "600px",
-        height: "400px"
-    }, 5000);
+    // // Fram 1
+    // $("div").animate({
+    //     width: "600px",
+    //     height: "400px"
+    // }, 5000);
 
-    // Fram 2
-    $("div").animate({
-        width: "300px",
-        height: "100px"
-    }, 2000);
+    // // Fram 2
+    // $("div").animate({
+    //     width: "300px",
+    //     height: "100px"
+    // }, 2000);
 
-    // Fram 3
-    $("div").animate({
-        borderRadius: "20px"
-    }, 2000);
+    // // Fram 3
+    // $("div").animate({
+    //     borderRadius: "20px"
+    // }, 2000);
 
-    // Fram 4
-    $("div").animate({
-        fontSize: "20px"
-    }, 2000);
+    // // Fram 4
+    // $("div").animate({
+    //     fontSize: "20px"
+    // }, 2000);
 
 
     /*-------------------------------------------------------------------------------*/
 
+    // Chain() effect
 
+    // without Chain, normal and we use here variable, it's very important to use variables to make the html element cashed inside the jQuery
+    // let div = $("div");
+    // div.slideUp(2000);
+    // div.slideDown(2000);
+    // div.fadeOut(2000);
+    // div.fadeIn(2000);
+
+
+    // the chain as per example below:
+
+    $("div")
+    .css("background", "yellow")
+    .css("color", "blue")
+    .slideUp(2000)
+    .slideDown(2000)
+    .fadeOut(2000)
+    .fadeIn(2000)
+    .hide(1000)
+    .show(1000)
+    .animate({ width: "600px", height: "600px" }, 1000);
 
 
 });
