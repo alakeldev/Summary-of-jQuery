@@ -312,9 +312,94 @@ $(document).ready(function () {
 
     //**--------------------------
 
+    // stop() effect
+    // Syntax of stop()  => stop(ClearQueue, goToEnd);   clearQueue => default value is False , goToEnd => default value is False
+    // What is the meaning of False values the stop() if we didn't provide other value so stop it will stop the current animation only and 
+    // will continue with the next animation (Queue list => animation list) 
+    // on the below example if you press on stop button and you have as mentioned below many animation so when you press it you sill skip the current 
+    // animation and it will continue on the next one 
+
+    // $("button").click(function () {
+    //     $("div").stop();
+    // });
+
+    // $("div").animate({
+    //     width: "400px",
+    //     height: "200px"
+    // }, 2000);
+
+
+    // $("div").animate({
+    //     width: "300px",
+    //     height: "100px"
+    // }, 2000);
+
+
+    // $("div").animate({
+    //     borderRadius: "20px"
+    // }, 2000);
 
 
 
+
+    // onother example, we are going to set the clearQueue as true 
+    // here when we press on stop button it will stop all the animations because we are set the value of it as true
+    // $("button").click(function () {
+    //     $("div").stop(true);
+    // });
+
+    // $("div").animate({
+    //     width: "400px",
+    //     height: "200px"
+    // }, 2000);
+
+
+    // $("div").animate({
+    //     width: "300px",
+    //     height: "100px"
+    // }, 2000);
+
+
+    // $("div").animate({
+    //     borderRadius: "20px"
+    // }, 2000);
+
+
+
+
+    //another example:
+    //stop(clearQueue, goToEnd)
+    // not we will explain that go to end will take the element to the last design of the element after finished in each animation Fram but
+    // without going through the animation process as per below:
+
+    $("button").click(function () {
+        $("div").stop(false, true);
+    });
+
+    // Fram 1
+    $("div").animate({
+        width: "600px",
+        height: "400px"
+    }, 5000);
+
+    // Fram 2
+    $("div").animate({
+        width: "300px",
+        height: "100px"
+    }, 2000);
+
+    // Fram 3
+    $("div").animate({
+        borderRadius: "20px"
+    }, 2000);
+
+    // Fram 4
+    $("div").animate({
+        fontSize: "20px"
+    }, 2000);
+
+
+    /*-------------------------------------------------------------------------------*/
 
 
 

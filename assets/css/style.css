@@ -60,7 +60,7 @@ span {
 
 
 
-div {
+/* div {
     width: 300px;
     background: #eee;
     border: 1px solid #ccc;
@@ -75,4 +75,17 @@ span {
     color: red;
     font-weight: bold;
     display: none;
+} */
+
+
+
+
+
+
+div {
+    width: 300px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    
 }
