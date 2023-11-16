@@ -41,3 +41,7 @@ $(function () {
 
 
 #### Events:
+
+
+
+#### Animation in jQuery

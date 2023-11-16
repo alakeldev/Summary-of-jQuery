@@ -138,7 +138,7 @@ $(document).ready(function () {
     //     });
     // });
 
-    
+
 
     //** fadeOut() =>  to make the fadeOut work the element must be Shown on the page(display: block....) not none
     // same hide() but also the fadeOut is base on opacity property 
@@ -200,6 +200,124 @@ $(document).ready(function () {
     // $(".open").click(function() {
     //     $(".box").slideToggle(5000)
     // })
+
+    /*-------------------------------------------------------------------------------*/
+    // Animation Section
+    //it needs three options (Syntax) =>  .animate({css properties that we want to make the animation on it},speed, callback function)
+    //Example  below:
+    // $("div").animate({
+    //     width:"500px"
+    // }, 2000, function() {
+    //     $("span").fadeIn(1000);
+    // });
+
+
+    // please be note that the position property for the element must be not equal to static => position: static; in this situation will not move
+
+    // $("div").animate({
+    //     width: "500px",
+    //     left: "100px",
+    //     height: "300px",
+    //     opacity: "0.2",
+    // }, 5000);
+
+
+    // if you want to set not fixed value so you want to put 50px or any number += its real value (width, height...)
+    // if you want less than the original its width you can use also -= any number you want
+
+    // $("div").animate({
+    //     width: "-=50px",
+    //     left: "100px",
+    //     height: "+=100px",
+    //     opacity: "0.5",
+    //     borderRadius: "20px",
+    // });
+
+
+    // for the css properties that contain two words or sectors, you gonna write it in the camel case
+    //border-radius => jquery => borderRadius
+    //font-size => jquery => fontSize
+
+
+    // please be note that you can set the value show, hide , toggle as a values inside the css properties inside jQuery file as per below:
+    // $("div").animate({
+    //     width: "toggle",
+    //     left: "100px",
+    //     height: "hide",
+    //     opacity: "0.5",
+    //     borderRadius: "20px",
+    // }, 5000);
+
+
+
+    // Important note, each animation inside jQuery will wait to finish the previous animation then it can start its animation.
+
+    // $("div").animate({
+    //     width: "hide",
+    //     height: "hide",
+    //     opacity: "0.9",
+    //     borderRadius: "20px",
+    // }, 2000);
+
+    // $("div").animate({
+    //     width: "show",
+    //     height: "show",
+    //     opacity: 0.5,
+    // }, 2000)
+    // $("div").animate({
+    //     width: "toggle",
+    //     height: "toggle",
+    //     opacity: 0.5,
+    // }, 2000)
+    // $("div").animate({
+    //     width: "toggle",
+    //     height: "toggle",
+    //     opacity: 0.5,
+    // }, 2000)
+    // $("div").animate({
+    //     width: "toggle",
+    //     height: "toggle",
+    //     opacity: 0.5,
+    // }, 2000)
+
+
+
+
+    //Example
+
+    // $("div").animate({
+    //     top:"10px"
+    // }, 1000)
+
+    // $("div").animate({
+    //     width: "600px"
+    // }, 1000)
+
+
+    // $("div").animate({
+    //     height: "400px"
+    // }, 1000)
+
+
+    // $("div").animate({
+    //     borderRadius: "20px"
+    // }, 1000)
+
+    // $("div").animate({
+    //     fontSize: "40px"
+    // }, 1000)
+
+    // $("div").fadeOut(3000)
+
+
+    //**--------------------------
+
+
+
+
+
+
+
 
 });
 
