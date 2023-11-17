@@ -625,3 +625,85 @@ opacity css property work*/
 
 //     });
 // });
+
+
+/*-------------------------------------------------------------------------------*/
+
+// Here we are going to uderstand the css class and how we can add classes on element , remove classes from element, and toggle classes
+
+// $(document).ready(function() {
+
+    // $("p").click(function() {
+
+    //     // add class
+    //     $(this).addClass("custom br"); // here we added two classes to the element p when we press on p 
+
+    // });
+
+    // $("button").click(function() {
+        // $("div.alakel").addClass("custom br"); // here another exmaple we added two classes to the element div with class value .alakel
+
+
+        // $("div, p, span").addClass("custom br");  // here we add three elements to set a new values to its class property
+
+        // $("div, p, span").addClass("custom br").removeClass("alakel");  // here we added classes to the elements and remove the class: alakel
+
+        // $("div, p, span").removeClass("alakel"); // Here we only remove the class: alakel from the group of elements
+
+        // $("div").removeClass("alakel jquery css"); // here we only remove group or classes from the div
+
+        // $("div").removeClass(); // Here the element div will remove all its classes becasue we didn't set a specific value for the remove class
+
+
+
+
+
+
+        // the section below for the filter (advanved section only to read it's not the original section for this part)
+
+        // using filter : first and :last Important
+        // $("p:first").addClass("alakel jquery css"); // Here we are using a filter to target the first paragraph and add group classes to it
+
+        // $("p:last").addClass("alakel"); // Here we are using a filter to target the last Paragraph then add a class equal to alakel to it
+
+
+        // here using filter important contains
+        // $("p:contains('Love')").addClass("custom br");
+
+        // // here using filter important equal0 , that's mean the first paragraph in the page
+        // $("p:eq(0)").addClass("custom br");
+
+        // // here it means that second paragraph in the page
+        // $("p:eq(1)").addClass("custom br");
+
+
+
+
+        //Toggle class section
+
+        // $("p:eq(2)").toggleClass(); // same as before toggle if it has class will remove it , if it has not so it will add its class
+
+        //
+    // });
+
+
+
+    // $("p:eq(3)").click(function() {
+    //     $("p:eq(3)").toggleClass();
+    // })
+
+    // IMPORTANT TO LEAN AND UNDERSTAND
+    // $("p").click(function() {
+    //     $(this).toggleClass();
+    // });
+
+
+
+    // $("div.test").click(function() {
+    //     $(this).toggleClass("border")
+    // })
+    
+
+// });
+
+/*-------------------------------------------------------------------------------*/
