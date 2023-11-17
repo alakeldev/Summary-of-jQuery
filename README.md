@@ -45,3 +45,6 @@ $(function () {
 
 
 #### Animation in jQuery
+
+
+#### GET and SET

@@ -92,10 +92,17 @@ div {
 
 
 
-
+/* 
 div {
     background: #ddd;
     width: 400px;
     padding: 10px;
     height: 300px;
-}
+} */
+
+
+/* 
+input[type="text"] {
+    width: 600px;
+    padding: 10px;
+} */
