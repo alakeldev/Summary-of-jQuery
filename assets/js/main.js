@@ -431,72 +431,72 @@ opacity css property work*/
 
 // $(document).ready(function () {
 
-    // alert($("div").text());     you will show the div context inside an alert
+// alert($("div").text());     you will show the div context inside an alert
 
 
 
 
-    ////////////////////////////////////////////////
+////////////////////////////////////////////////
 
-    // 1- .text
-    // let div = $("div").text();
+// 1- .text
+// let div = $("div").text();
 
-    // $("p").text(div);
-
-
-
-    // 2- .html
-    // let div = $("div").html();
-
-    // $("p").html(div);
+// $("p").text(div);
 
 
 
-    // the different above between .html and .text => .html will also take the html structure
-    // include the context but .text will take only the context without any html tags or even the inline style
+// 2- .html
+// let div = $("div").html();
 
-    ///////////////////////////////////////////////
-
-
-
-
-    // $("button").click(function() {
-    //     $("input").val("This Value From jQuery");
-    // });
+// $("p").html(div);
 
 
 
-    // $("button").click(function() {
-    //     $("input").val($("div").text());
-    // })
+// the different above between .html and .text => .html will also take the html structure
+// include the context but .text will take only the context without any html tags or even the inline style
 
-
-    // if we are using as per below example .html so it will take also the html tags and inline style property to the input and show it as per below:
-    //the result =>  <span style="color: red;">Hello From Div</span>
-    
-    // $("button").click(function () {
-        //     $("input").val($("div").html());
-        // })
-        
-        
-    // Important example below to understand the val()
-    // $("button").click(function () {
-    //     $("div.result").text( "The Result is: " + $("input").val());
-    // });
+///////////////////////////////////////////////
 
 
 
 
-    // Attributes section
-
-    // $("button").click(function() {
-    //     $("input").val($("a").attr("target"))     // the result is the value of attribute target
-    // });
+// $("button").click(function() {
+//     $("input").val("This Value From jQuery");
+// });
 
 
-    // $("button").click(function () {
-    //     $("input").val($("a").attr("href"))     // the result is the value of attribute href
-    // });
+
+// $("button").click(function() {
+//     $("input").val($("div").text());
+// })
+
+
+// if we are using as per below example .html so it will take also the html tags and inline style property to the input and show it as per below:
+//the result =>  <span style="color: red;">Hello From Div</span>
+
+// $("button").click(function () {
+//     $("input").val($("div").html());
+// })
+
+
+// Important example below to understand the val()
+// $("button").click(function () {
+//     $("div.result").text( "The Result is: " + $("input").val());
+// });
+
+
+
+
+// Attributes section
+
+// $("button").click(function() {
+//     $("input").val($("a").attr("target"))     // the result is the value of attribute target
+// });
+
+
+// $("button").click(function () {
+//     $("input").val($("a").attr("href"))     // the result is the value of attribute href
+// });
 
 // for the previouse two examples we made get the attribute value
 
@@ -504,28 +504,28 @@ opacity css property work*/
 
 // if you want to change the value of a specific attribute
 
-    // $("button").click(function() {
-    //     $("a").attr("class", "jquery");    // here we set the class attribute new value  / Syntax=> attr("the attribute", "its new value")
-    // })
+// $("button").click(function() {
+//     $("a").attr("class", "jquery");    // here we set the class attribute new value  / Syntax=> attr("the attribute", "its new value")
+// })
 
-    // $("button").click(function () {
-    //     $("a").attr("href", "https://www.jquery.com");    // here we set the href attribute new value 
-    // })
-
-
-
-    // $("button").click(function () {
-    //     $("a").attr({
-    //         "target":"xx",
-    //         "href": "https://www.jquery.com",
-    //         "class": "alakel"
-    //     });    
-    //     // above we want to set new values from group of attributes we follow the way above IMPORTANT
+// $("button").click(function () {
+//     $("a").attr("href", "https://www.jquery.com");    // here we set the href attribute new value 
+// })
 
 
 
-    //     alert($("a").attr("href"))   // with using alert method to show the value of href attribute
-    // });
+// $("button").click(function () {
+//     $("a").attr({
+//         "target":"xx",
+//         "href": "https://www.jquery.com",
+//         "class": "alakel"
+//     });    
+//     // above we want to set new values from group of attributes we follow the way above IMPORTANT
+
+
+
+//     alert($("a").attr("href"))   // with using alert method to show the value of href attribute
+// });
 
 // });
 
@@ -539,44 +539,44 @@ opacity css property work*/
 
 // $(document).ready(function() {
 
-    // //append   parent => append => child
-    // $("div").append("<p>Hello</p>")  // append will add the element to last or at the end of the target element in our example is div
-    // $("div").append("<span><a href='#'>Google</a></span>") //add the element to last or at the end of the target element in our example is div
+// //append   parent => append => child
+// $("div").append("<p>Hello</p>")  // append will add the element to last or at the end of the target element in our example is div
+// $("div").append("<span><a href='#'>Google</a></span>") //add the element to last or at the end of the target element in our example is div
 
 
 
-    // // prepend  parent => prepend => child
-    // $("div").prepend("<span><a href='#'>Facebook</a></span>") // add the element to begin or at the start of the targeted element, in our example div
+// // prepend  parent => prepend => child
+// $("div").prepend("<span><a href='#'>Facebook</a></span>") // add the element to begin or at the start of the targeted element, in our example div
 
 
 
-    // // before is working same prepend but will add the new element out side the targeted element and sure before it
-    // $("div").before("<p>Hi</p>");
+// // before is working same prepend but will add the new element out side the targeted element and sure before it
+// $("div").before("<p>Hi</p>");
 
 
 
-    // // after is working same append but will add the new element out side the targeted element and sure after it
-    // $("div").after("<p>alakel</p>");
+// // after is working same append but will add the new element out side the targeted element and sure after it
+// $("div").after("<p>alakel</p>");
 
 
-    // // example to input type add file ---- it's only an example
-    // $("span.add").click(function() {
-    //     $("input").after("<br /><input type='file'>")
-    // });
+// // example to input type add file ---- it's only an example
+// $("span.add").click(function() {
+//     $("input").after("<br /><input type='file'>")
+// });
 
 
-    // appendTo    child => append to => parent
-    // here the targeted element will be second the first you gonna write what you want append exactly like a text or new element
-    // $("<p>Hello Paragraph</p>").appendTo("div")
+// appendTo    child => append to => parent
+// here the targeted element will be second the first you gonna write what you want append exactly like a text or new element
+// $("<p>Hello Paragraph</p>").appendTo("div")
 
-    // prependTo   child => prepend to => parent
-    // here the targeted element will be second and the first you gonna write what you want prepend exactly like a text or new element
-    // $("<p>Hello from prependto paragraph</p>").prependTo("div");
-
-
+// prependTo   child => prepend to => parent
+// here the targeted element will be second and the first you gonna write what you want prepend exactly like a text or new element
+// $("<p>Hello from prependto paragraph</p>").prependTo("div");
 
 
-    // advanced example important to understand and these attributes will be as variables you can use it and edit it in the future
+
+
+// advanced example important to understand and these attributes will be as variables you can use it and edit it in the future
 
 //     $("<p></p>", {
 //         text: "Welcome To power of jQuery",
@@ -586,3 +586,42 @@ opacity css property work*/
 
 
 /*-------------------------------------------------------------------------------*/
+
+// Remove Element from the page
+
+/* Remove the element completely from the page */
+
+// $(document).ready(function () {
+
+//     $("button").click(function () {
+
+        // $("div").hide();   // Here the div is still on the page but its display value is none
+        // $("div").remove();   // Here the div removed completely from the page or the document
+
+        // $("div.jquery").remove();  // Here we make the remove apply on the div with class value equal to jquery
+
+        // $("div").remove(".jquery")   // Here also same above we apply the remove on the div with class value equal to jquery
+
+        // IMPORTANT: please be note that remove will be remove not only the element but also its children too
+
+
+        // $("div").fadeOut(5000);  // here also please be note that fadeOut on opacity but at the end will be the display: none;
+
+        // in the below example will be fadeOut till reach to display none and because or call back function will be remove completely div from the document
+        //     $("div").fadeOut(2000, function() {
+        //         $(this).remove();
+        //     });
+
+        // in the below advanced example i want to remove the specific paragraph that contains an exact word
+        // Very Important Advanced Example for filter and to catch and remove an exact paragraph that contains a specific word
+        // $("p").remove(" :contains('This')");
+
+        /*-------------------------------------------------------------------------------*/
+        // Empty 
+
+        // $("div.jquery").empty();   // will empty the element from the elements and text too because the text by dom concept is a child too
+
+        // Imprtant to understand empty()
+
+//     });
+// });
