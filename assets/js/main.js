@@ -707,3 +707,49 @@ opacity css property work*/
 // });
 
 /*-------------------------------------------------------------------------------*/
+
+
+// Here we are focusing on the CSS properties to edit each through jQuery
+
+// $(document).ready(function() {
+
+    // $("button").click(function() {
+    //     let color = $("p").css("color");
+    //     let backgroundcolor = $("p").css("background");
+    //     let pad = $("p").css("padding");
+
+    //     console.log(color);  // here we only print the value of color variable to the console
+
+    //     $("input").val(color); // here we set the val of the input to the color value so it will appear on the input field
+
+    //     $("<span></span>",{    
+    //         text: pad
+
+    //     }).appendTo("body")   // here we append to body a new span with its text that it is equal to pad variable
+
+    // });
+
+
+
+
+
+///// another example below: here we take the value that you gonna write on the input field and set it to the color variable
+/// then we use css() to set a new value for color property that's related to the p element
+
+// the normal: css(property, new value for this property)
+    // $("button").click(function () {
+        // let color = $("input").val();
+        // $("p").css("color", color);
+
+
+
+        // now if you have more than one property so you gonna follow the way as per below example:    IMPORTANT IF YOU HAVE GROUP OF PROPERTIES
+        // also for the note we are using below a variable to store the input field value to set it later to one property of the css element
+//         let pad = $("input").val();
+//         $("p").css({
+//             "background":"#f00",
+//             "color":"#000",
+//             "padding":pad
+//         });
+//     });
+// });
