@@ -709,7 +709,7 @@ opacity css property work*/
 /*-------------------------------------------------------------------------------*/
 
 
-// Here we are focusing on the CSS properties to edit each through jQuery
+// Here we are focusing on the CSS properties 
 
 // $(document).ready(function() {
 
