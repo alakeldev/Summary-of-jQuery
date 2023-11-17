@@ -429,7 +429,7 @@ opacity css property work*/
 
 /*-------------------------------------------------------------------------------*/
 
-$(document).ready(function () {
+// $(document).ready(function () {
 
     // alert($("div").text());     you will show the div context inside an alert
 
@@ -527,4 +527,62 @@ $(document).ready(function () {
     //     alert($("a").attr("href"))   // with using alert method to show the value of href attribute
     // });
 
-});
+// });
+
+
+
+/*-------------------------------------------------------------------------------*/
+
+/////// In this section you gonna learn how to add new html elements using jQuery and how to set it in a specific place inside the page
+
+/* append , appendTo, prepend, prependTo, Before, After */
+
+// $(document).ready(function() {
+
+    // //append   parent => append => child
+    // $("div").append("<p>Hello</p>")  // append will add the element to last or at the end of the target element in our example is div
+    // $("div").append("<span><a href='#'>Google</a></span>") //add the element to last or at the end of the target element in our example is div
+
+
+
+    // // prepend  parent => prepend => child
+    // $("div").prepend("<span><a href='#'>Facebook</a></span>") // add the element to begin or at the start of the targeted element, in our example div
+
+
+
+    // // before is working same prepend but will add the new element out side the targeted element and sure before it
+    // $("div").before("<p>Hi</p>");
+
+
+
+    // // after is working same append but will add the new element out side the targeted element and sure after it
+    // $("div").after("<p>alakel</p>");
+
+
+    // // example to input type add file ---- it's only an example
+    // $("span.add").click(function() {
+    //     $("input").after("<br /><input type='file'>")
+    // });
+
+
+    // appendTo    child => append to => parent
+    // here the targeted element will be second the first you gonna write what you want append exactly like a text or new element
+    // $("<p>Hello Paragraph</p>").appendTo("div")
+
+    // prependTo   child => prepend to => parent
+    // here the targeted element will be second and the first you gonna write what you want prepend exactly like a text or new element
+    // $("<p>Hello from prependto paragraph</p>").prependTo("div");
+
+
+
+
+    // advanced example important to understand and these attributes will be as variables you can use it and edit it in the future
+
+//     $("<p></p>", {
+//         text: "Welcome To power of jQuery",
+//         class: "Alakel"
+//     }).appendTo("div");
+// });
+
+
+/*-------------------------------------------------------------------------------*/
