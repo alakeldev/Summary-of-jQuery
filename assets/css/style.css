@@ -215,3 +215,27 @@ section .top p span {
     border: 1px solid #ccc;
 
 } */
+
+
+
+
+
+
+
+/* Traversing Part 2  */
+/* 
+section, div, p, span {
+    padding: 10px;
+    border: 1px solid #ccc;
+
+}
+
+
+p{
+    margin: 0;
+}
+
+
+span {
+    display: block;
+} */

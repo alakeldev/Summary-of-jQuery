@@ -958,5 +958,42 @@ opacity css property work*/
 
     // $("span").parentsUntil(".my-section").fadeOut(2000);
 
+// });
+
+/*-------------------------------------------------------------------------------*/
+
+// Traversing Part 2 
+
+// $(document).ready(function() {
+    
+    // children()  here it will return the direct children for the element (one level direct children only)
+    // console.log($("section").children());
+    
+    // console.log($("div").children());
+
+    // console.log($("p").children());
+
+
+    // $("section").children().css("border", "1px solid #f00");  // only for direct children for the element
+
+
+    // $("section").children(".jquery").css("border", "1px solid #f00"); // Here you are saying to search on the section direct children on a specific child with a class .jquery but please be note that on the Direct Children ONLY
+
+    // $("div").children(".jquery").css("border", "1px solid #f00");
+
+
+    // find filtration     VERY VERY IMPORTANT TO EASY TARGET
+    // find it will search in all children levels not only one level same children()
+    // $("section").find("span").css("border", "1px solid #00f");
+
+    // $("section").find(".jquery").css("border","1px solid #f00");
+
+
+    // $("section").find("*").css("border", "1px solid #f00"); // all the element under the section will be effect here becasue of * but it must be under the section
+
+
+    // $("section").find($("p:contains('Love')")).css("border","1px solid #0f0");  // Important here we are using jQuery object
+    // $("section").find($("p:contains('Facebook')")).css("border", "1px solid #f00"); // Here we using also filtration top search on paragraph that containing a specific word
+
 
 // });
