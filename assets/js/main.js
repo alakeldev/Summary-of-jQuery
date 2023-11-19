@@ -595,33 +595,33 @@ opacity css property work*/
 
 //     $("button").click(function () {
 
-        // $("div").hide();   // Here the div is still on the page but its display value is none
-        // $("div").remove();   // Here the div removed completely from the page or the document
+// $("div").hide();   // Here the div is still on the page but its display value is none
+// $("div").remove();   // Here the div removed completely from the page or the document
 
-        // $("div.jquery").remove();  // Here we make the remove apply on the div with class value equal to jquery
+// $("div.jquery").remove();  // Here we make the remove apply on the div with class value equal to jquery
 
-        // $("div").remove(".jquery")   // Here also same above we apply the remove on the div with class value equal to jquery
+// $("div").remove(".jquery")   // Here also same above we apply the remove on the div with class value equal to jquery
 
-        // IMPORTANT: please be note that remove will be remove not only the element but also its children too
+// IMPORTANT: please be note that remove will be remove not only the element but also its children too
 
 
-        // $("div").fadeOut(5000);  // here also please be note that fadeOut on opacity but at the end will be the display: none;
+// $("div").fadeOut(5000);  // here also please be note that fadeOut on opacity but at the end will be the display: none;
 
-        // in the below example will be fadeOut till reach to display none and because or call back function will be remove completely div from the document
-        //     $("div").fadeOut(2000, function() {
-        //         $(this).remove();
-        //     });
+// in the below example will be fadeOut till reach to display none and because or call back function will be remove completely div from the document
+//     $("div").fadeOut(2000, function() {
+//         $(this).remove();
+//     });
 
-        // in the below advanced example i want to remove the specific paragraph that contains an exact word
-        // Very Important Advanced Example for filter and to catch and remove an exact paragraph that contains a specific word
-        // $("p").remove(" :contains('This')");
+// in the below advanced example i want to remove the specific paragraph that contains an exact word
+// Very Important Advanced Example for filter and to catch and remove an exact paragraph that contains a specific word
+// $("p").remove(" :contains('This')");
 
-        /*-------------------------------------------------------------------------------*/
-        // Empty 
+/*-------------------------------------------------------------------------------*/
+// Empty 
 
-        // $("div.jquery").empty();   // will empty the element from the elements and text too because the text by dom concept is a child too
+// $("div.jquery").empty();   // will empty the element from the elements and text too because the text by dom concept is a child too
 
-        // Imprtant to understand empty()
+// Imprtant to understand empty()
 
 //     });
 // });
@@ -633,76 +633,76 @@ opacity css property work*/
 
 // $(document).ready(function() {
 
-    // $("p").click(function() {
+// $("p").click(function() {
 
-    //     // add class
-    //     $(this).addClass("custom br"); // here we added two classes to the element p when we press on p 
+//     // add class
+//     $(this).addClass("custom br"); // here we added two classes to the element p when we press on p 
 
-    // });
+// });
 
-    // $("button").click(function() {
-        // $("div.alakel").addClass("custom br"); // here another exmaple we added two classes to the element div with class value .alakel
-
-
-        // $("div, p, span").addClass("custom br");  // here we add three elements to set a new values to its class property
-
-        // $("div, p, span").addClass("custom br").removeClass("alakel");  // here we added classes to the elements and remove the class: alakel
-
-        // $("div, p, span").removeClass("alakel"); // Here we only remove the class: alakel from the group of elements
-
-        // $("div").removeClass("alakel jquery css"); // here we only remove group or classes from the div
-
-        // $("div").removeClass(); // Here the element div will remove all its classes becasue we didn't set a specific value for the remove class
+// $("button").click(function() {
+// $("div.alakel").addClass("custom br"); // here another exmaple we added two classes to the element div with class value .alakel
 
 
+// $("div, p, span").addClass("custom br");  // here we add three elements to set a new values to its class property
+
+// $("div, p, span").addClass("custom br").removeClass("alakel");  // here we added classes to the elements and remove the class: alakel
+
+// $("div, p, span").removeClass("alakel"); // Here we only remove the class: alakel from the group of elements
+
+// $("div").removeClass("alakel jquery css"); // here we only remove group or classes from the div
+
+// $("div").removeClass(); // Here the element div will remove all its classes becasue we didn't set a specific value for the remove class
 
 
 
 
-        // the section below for the filter (advanved section only to read it's not the original section for this part)
-
-        // using filter : first and :last Important
-        // $("p:first").addClass("alakel jquery css"); // Here we are using a filter to target the first paragraph and add group classes to it
-
-        // $("p:last").addClass("alakel"); // Here we are using a filter to target the last Paragraph then add a class equal to alakel to it
 
 
-        // here using filter important contains
-        // $("p:contains('Love')").addClass("custom br");
+// the section below for the filter (advanved section only to read it's not the original section for this part)
 
-        // // here using filter important equal0 , that's mean the first paragraph in the page
-        // $("p:eq(0)").addClass("custom br");
+// using filter : first and :last Important
+// $("p:first").addClass("alakel jquery css"); // Here we are using a filter to target the first paragraph and add group classes to it
 
-        // // here it means that second paragraph in the page
-        // $("p:eq(1)").addClass("custom br");
+// $("p:last").addClass("alakel"); // Here we are using a filter to target the last Paragraph then add a class equal to alakel to it
 
 
+// here using filter important contains
+// $("p:contains('Love')").addClass("custom br");
 
+// // here using filter important equal0 , that's mean the first paragraph in the page
+// $("p:eq(0)").addClass("custom br");
 
-        //Toggle class section
-
-        // $("p:eq(2)").toggleClass(); // same as before toggle if it has class will remove it , if it has not so it will add its class
-
-        //
-    // });
+// // here it means that second paragraph in the page
+// $("p:eq(1)").addClass("custom br");
 
 
 
-    // $("p:eq(3)").click(function() {
-    //     $("p:eq(3)").toggleClass();
-    // })
 
-    // IMPORTANT TO LEAN AND UNDERSTAND
-    // $("p").click(function() {
-    //     $(this).toggleClass();
-    // });
+//Toggle class section
 
+// $("p:eq(2)").toggleClass(); // same as before toggle if it has class will remove it , if it has not so it will add its class
+
+//
+// });
 
 
-    // $("div.test").click(function() {
-    //     $(this).toggleClass("border")
-    // })
-    
+
+// $("p:eq(3)").click(function() {
+//     $("p:eq(3)").toggleClass();
+// })
+
+// IMPORTANT TO LEAN AND UNDERSTAND
+// $("p").click(function() {
+//     $(this).toggleClass();
+// });
+
+
+
+// $("div.test").click(function() {
+//     $(this).toggleClass("border")
+// })
+
 
 // });
 
@@ -713,21 +713,21 @@ opacity css property work*/
 
 // $(document).ready(function() {
 
-    // $("button").click(function() {
-    //     let color = $("p").css("color");
-    //     let backgroundcolor = $("p").css("background");
-    //     let pad = $("p").css("padding");
+// $("button").click(function() {
+//     let color = $("p").css("color");
+//     let backgroundcolor = $("p").css("background");
+//     let pad = $("p").css("padding");
 
-    //     console.log(color);  // here we only print the value of color variable to the console
+//     console.log(color);  // here we only print the value of color variable to the console
 
-    //     $("input").val(color); // here we set the val of the input to the color value so it will appear on the input field
+//     $("input").val(color); // here we set the val of the input to the color value so it will appear on the input field
 
-    //     $("<span></span>",{    
-    //         text: pad
+//     $("<span></span>",{    
+//         text: pad
 
-    //     }).appendTo("body")   // here we append to body a new span with its text that it is equal to pad variable
+//     }).appendTo("body")   // here we append to body a new span with its text that it is equal to pad variable
 
-    // });
+// });
 
 
 
@@ -737,14 +737,14 @@ opacity css property work*/
 /// then we use css() to set a new value for color property that's related to the p element
 
 // the normal: css(property, new value for this property)
-    // $("button").click(function () {
-        // let color = $("input").val();
-        // $("p").css("color", color);
+// $("button").click(function () {
+// let color = $("input").val();
+// $("p").css("color", color);
 
 
 
-        // now if you have more than one property so you gonna follow the way as per below example:    IMPORTANT IF YOU HAVE GROUP OF PROPERTIES
-        // also for the note we are using below a variable to store the input field value to set it later to one property of the css element
+// now if you have more than one property so you gonna follow the way as per below example:    IMPORTANT IF YOU HAVE GROUP OF PROPERTIES
+// also for the note we are using below a variable to store the input field value to set it later to one property of the css element
 //         let pad = $("input").val();
 //         $("p").css({
 //             "background":"#f00",
@@ -753,3 +753,162 @@ opacity css property work*/
 //         });
 //     });
 // });
+
+/*-------------------------------------------------------------------------------*/
+// Dimensions in jQuery width , height , inner width, inner height , outer width , outer height
+
+// width
+
+// $(document).ready(function () {
+    //Example:1
+    // let docWidth = $(document).width();
+    // console.log(docWidth);
+
+    // if(docWidth == 1488) {
+    //     console.log("You have Big Screen")
+    // } else {
+    //     console.log("You have Small Screen!")
+    // }
+
+
+    // Example:2
+    // let docWidth = $(document).width();
+    // console.log(docWidth);
+
+    // if (docWidth == 1488) {
+    //     $("body").append("<span>Congrats</span>")
+    // } else {
+    //     $("body").append("<span>Sorry</span>")
+    // };
+
+    // Example:3
+    // $("div.dim").click(function () {
+    //     let dv = $(this).width();
+    //     console.log("Your Div Width is: " + dv + "px");
+    // })
+
+    // Example: 4 change and set a new width to the element
+    // $("div.dim").click(function () {
+    //     $(this).width(300);
+    //     $(this).text("Your Div Width is: " + $(this).width() + "px");
+    //     console.log("Your Div Width is: " + $(this).width() + "px");
+    // })
+
+    // Example: 5 
+    // $("div.dim").click(function () {
+    //     $(this).width("+=" + 50);
+    //     $(this).text("Your Div Width is: " + $(this).width() + "px");
+    //     console.log("Your Div Width is: " + $(this).width() + "px");
+    // });
+
+
+
+    // Example: 6  very good example but with using float property in the css file
+    // $("div.left").click(function () {
+    //     $(this).width("+=" + 50);
+    //     $("div.right").width("-=" + 50);
+    // })
+
+    // $("div.right").click(function () {
+    //     $(this).width("+=" + 50);
+    //     $("div.left").width("-=" + 50);
+    // })
+
+
+    // Example: 7
+    // $("div.cont").click(function () {
+    //     $(this).width("+=" + 50);
+    //     $(this).text($(this).width());
+
+    //     if ($(this).width() == 700) {
+    //         $(this).css({
+    //             maxWidth: "700px",
+    //             width: "700px"
+    //         });
+    //         console.log("You Cannot Add Width More Than " + $(this).width());
+    //     }
+    // });
+
+    // Example: 8
+    // $("div.cont").click(function () {
+    //     $(this).width("+=" + 50);
+    //     $(this).text($(this).width());
+
+    //     if ($(this).width() == 700) {
+    //         $(this).css({
+    //             width: "50px"
+    //         });
+    //         console.log("You Cannot Add Width More Than " + $(this).width());
+    //     }
+    // });
+
+
+
+    // Example: 9
+    // $("div.cont").click(function () {
+    //     console.log($(this).width());   // here the width will not include any addition in the width such as padding and borders
+    // });
+
+    // please be note that if you want to deal with document or window you must use only width not inner or even outer
+
+    // Example: 10 innerWidth
+    // $("div.cont").click(function () {
+    //     console.log($(this).innerWidth());   // with innerWidth will bring the width + the padding left and right
+    // });                                          // the innerWidth will not include the borders with the width
+
+    //Example: 11  outerWidth
+    // $("div.cont").click(function () {
+    //     console.log($(this).outerWidth());   // with outerWidth will bring the width + the borders + the padding too
+    // });
+
+    // Example:12 outerWidth(true)
+    // $("div.cont").click(function () {
+    //     console.log($(this).outerWidth(true));   // with outerWidth will bring the width + the borders + the padding too + the Margin because of true
+
+
+    // });
+
+    /*-------------------------------------------------------------------------------*/
+
+    // Height
+
+    // example: 1
+    // $(".cont").click(function() {
+    //     console.log($(this).height());
+    // });
+
+
+    // example: 2
+    // $(".cont").click(function () {
+    //     $(this).height("+=" + 50);
+    //     console.log($(this).height());
+    // });
+
+
+    // example: 3
+    // $(".cont").click(function () {
+    //     console.log($(this).height());    // only the original height without padding , margin or borders
+    // });
+
+
+    //example: 4   innerHeight
+    // $(".cont").click(function () {
+    //     console.log($(this).innerHeight());    // only the original height + padding
+    // });
+
+
+    //example: 5  outerHeight
+    // $(".cont").click(function () {
+    //     console.log($(this).outerHeight());    // only the original height + padding + borders
+    // });
+
+
+    //example: 5  outerheight(true)
+    // $(".cont").click(function () {
+    //     console.log($(this).outerHeight(true));    // only the original height + padding + borders + margin
+    // });
+
+// });
+
+
+/*-------------------------------------------------------------------------------*/
