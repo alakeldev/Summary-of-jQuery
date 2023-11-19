@@ -760,155 +760,203 @@ opacity css property work*/
 // width
 
 // $(document).ready(function () {
-    //Example:1
-    // let docWidth = $(document).width();
-    // console.log(docWidth);
+//Example:1
+// let docWidth = $(document).width();
+// console.log(docWidth);
 
-    // if(docWidth == 1488) {
-    //     console.log("You have Big Screen")
-    // } else {
-    //     console.log("You have Small Screen!")
-    // }
-
-
-    // Example:2
-    // let docWidth = $(document).width();
-    // console.log(docWidth);
-
-    // if (docWidth == 1488) {
-    //     $("body").append("<span>Congrats</span>")
-    // } else {
-    //     $("body").append("<span>Sorry</span>")
-    // };
-
-    // Example:3
-    // $("div.dim").click(function () {
-    //     let dv = $(this).width();
-    //     console.log("Your Div Width is: " + dv + "px");
-    // })
-
-    // Example: 4 change and set a new width to the element
-    // $("div.dim").click(function () {
-    //     $(this).width(300);
-    //     $(this).text("Your Div Width is: " + $(this).width() + "px");
-    //     console.log("Your Div Width is: " + $(this).width() + "px");
-    // })
-
-    // Example: 5 
-    // $("div.dim").click(function () {
-    //     $(this).width("+=" + 50);
-    //     $(this).text("Your Div Width is: " + $(this).width() + "px");
-    //     console.log("Your Div Width is: " + $(this).width() + "px");
-    // });
+// if(docWidth == 1488) {
+//     console.log("You have Big Screen")
+// } else {
+//     console.log("You have Small Screen!")
+// }
 
 
+// Example:2
+// let docWidth = $(document).width();
+// console.log(docWidth);
 
-    // Example: 6  very good example but with using float property in the css file
-    // $("div.left").click(function () {
-    //     $(this).width("+=" + 50);
-    //     $("div.right").width("-=" + 50);
-    // })
+// if (docWidth == 1488) {
+//     $("body").append("<span>Congrats</span>")
+// } else {
+//     $("body").append("<span>Sorry</span>")
+// };
 
-    // $("div.right").click(function () {
-    //     $(this).width("+=" + 50);
-    //     $("div.left").width("-=" + 50);
-    // })
+// Example:3
+// $("div.dim").click(function () {
+//     let dv = $(this).width();
+//     console.log("Your Div Width is: " + dv + "px");
+// })
 
+// Example: 4 change and set a new width to the element
+// $("div.dim").click(function () {
+//     $(this).width(300);
+//     $(this).text("Your Div Width is: " + $(this).width() + "px");
+//     console.log("Your Div Width is: " + $(this).width() + "px");
+// })
 
-    // Example: 7
-    // $("div.cont").click(function () {
-    //     $(this).width("+=" + 50);
-    //     $(this).text($(this).width());
-
-    //     if ($(this).width() == 700) {
-    //         $(this).css({
-    //             maxWidth: "700px",
-    //             width: "700px"
-    //         });
-    //         console.log("You Cannot Add Width More Than " + $(this).width());
-    //     }
-    // });
-
-    // Example: 8
-    // $("div.cont").click(function () {
-    //     $(this).width("+=" + 50);
-    //     $(this).text($(this).width());
-
-    //     if ($(this).width() == 700) {
-    //         $(this).css({
-    //             width: "50px"
-    //         });
-    //         console.log("You Cannot Add Width More Than " + $(this).width());
-    //     }
-    // });
+// Example: 5 
+// $("div.dim").click(function () {
+//     $(this).width("+=" + 50);
+//     $(this).text("Your Div Width is: " + $(this).width() + "px");
+//     console.log("Your Div Width is: " + $(this).width() + "px");
+// });
 
 
 
-    // Example: 9
-    // $("div.cont").click(function () {
-    //     console.log($(this).width());   // here the width will not include any addition in the width such as padding and borders
-    // });
+// Example: 6  very good example but with using float property in the css file
+// $("div.left").click(function () {
+//     $(this).width("+=" + 50);
+//     $("div.right").width("-=" + 50);
+// })
 
-    // please be note that if you want to deal with document or window you must use only width not inner or even outer
-
-    // Example: 10 innerWidth
-    // $("div.cont").click(function () {
-    //     console.log($(this).innerWidth());   // with innerWidth will bring the width + the padding left and right
-    // });                                          // the innerWidth will not include the borders with the width
-
-    //Example: 11  outerWidth
-    // $("div.cont").click(function () {
-    //     console.log($(this).outerWidth());   // with outerWidth will bring the width + the borders + the padding too
-    // });
-
-    // Example:12 outerWidth(true)
-    // $("div.cont").click(function () {
-    //     console.log($(this).outerWidth(true));   // with outerWidth will bring the width + the borders + the padding too + the Margin because of true
+// $("div.right").click(function () {
+//     $(this).width("+=" + 50);
+//     $("div.left").width("-=" + 50);
+// })
 
 
-    // });
+// Example: 7
+// $("div.cont").click(function () {
+//     $(this).width("+=" + 50);
+//     $(this).text($(this).width());
 
-    /*-------------------------------------------------------------------------------*/
+//     if ($(this).width() == 700) {
+//         $(this).css({
+//             maxWidth: "700px",
+//             width: "700px"
+//         });
+//         console.log("You Cannot Add Width More Than " + $(this).width());
+//     }
+// });
 
-    // Height
+// Example: 8
+// $("div.cont").click(function () {
+//     $(this).width("+=" + 50);
+//     $(this).text($(this).width());
 
-    // example: 1
-    // $(".cont").click(function() {
-    //     console.log($(this).height());
-    // });
-
-
-    // example: 2
-    // $(".cont").click(function () {
-    //     $(this).height("+=" + 50);
-    //     console.log($(this).height());
-    // });
-
-
-    // example: 3
-    // $(".cont").click(function () {
-    //     console.log($(this).height());    // only the original height without padding , margin or borders
-    // });
-
-
-    //example: 4   innerHeight
-    // $(".cont").click(function () {
-    //     console.log($(this).innerHeight());    // only the original height + padding
-    // });
+//     if ($(this).width() == 700) {
+//         $(this).css({
+//             width: "50px"
+//         });
+//         console.log("You Cannot Add Width More Than " + $(this).width());
+//     }
+// });
 
 
-    //example: 5  outerHeight
-    // $(".cont").click(function () {
-    //     console.log($(this).outerHeight());    // only the original height + padding + borders
-    // });
+
+// Example: 9
+// $("div.cont").click(function () {
+//     console.log($(this).width());   // here the width will not include any addition in the width such as padding and borders
+// });
+
+// please be note that if you want to deal with document or window you must use only width not inner or even outer
+
+// Example: 10 innerWidth
+// $("div.cont").click(function () {
+//     console.log($(this).innerWidth());   // with innerWidth will bring the width + the padding left and right
+// });                                          // the innerWidth will not include the borders with the width
+
+//Example: 11  outerWidth
+// $("div.cont").click(function () {
+//     console.log($(this).outerWidth());   // with outerWidth will bring the width + the borders + the padding too
+// });
+
+// Example:12 outerWidth(true)
+// $("div.cont").click(function () {
+//     console.log($(this).outerWidth(true));   // with outerWidth will bring the width + the borders + the padding too + the Margin because of true
 
 
-    //example: 5  outerheight(true)
-    // $(".cont").click(function () {
-    //     console.log($(this).outerHeight(true));    // only the original height + padding + borders + margin
-    // });
+// });
+
+/*-------------------------------------------------------------------------------*/
+
+// Height
+
+// example: 1
+// $(".cont").click(function() {
+//     console.log($(this).height());
+// });
+
+
+// example: 2
+// $(".cont").click(function () {
+//     $(this).height("+=" + 50);
+//     console.log($(this).height());
+// });
+
+
+// example: 3
+// $(".cont").click(function () {
+//     console.log($(this).height());    // only the original height without padding , margin or borders
+// });
+
+
+//example: 4   innerHeight
+// $(".cont").click(function () {
+//     console.log($(this).innerHeight());    // only the original height + padding
+// });
+
+
+//example: 5  outerHeight
+// $(".cont").click(function () {
+//     console.log($(this).outerHeight());    // only the original height + padding + borders
+// });
+
+
+//example: 5  outerheight(true)
+// $(".cont").click(function () {
+//     console.log($(this).outerHeight(true));    // only the original height + padding + borders + margin
+// });
 
 // });
 
 
 /*-------------------------------------------------------------------------------*/
+// Traversing
+
+// $(document).ready(function () {
+    // $("span").parent().css("border","1px solid #00f");   // the target here is p because it's the direct parent of the span
+
+    // $("p").parent().css("border", "1px solid #00f");   // the target here is div because it's the direct parent of the p
+
+    // $("div.top").parent().css("border", "1px solid #00f");   // the target here is section because it's the direct parent of the div.top
+
+    // $("section").parent().css("border", "1px solid #00f");   // the target here is body because it's the direct parent of the section
+
+
+
+    //Example: 1
+    // $("span").parent().css({ 
+    //     padding :"40px", 
+    //     border:"1px solid #080",
+    //     width: "80%",
+    //     borderRadius: "10px",
+    // });
+
+
+    // Example: 2   Here the parent will also effect on its child too and it will fadeOut with it
+    // $("span").parent().fadeOut(2000);
+
+
+
+
+    //Parents   *Plural* Important  it will effect on all the parents of this child include the body and html tags
+    // $("p").parents().css("border", "1px solid #f00");
+
+    // Here with parents("make a filtration") to pick a specific parent from the parents with our example a parent with class .top
+    // $("span").parents(".top").css("border", "1px solid #f00");
+
+
+
+
+    // parentsUntil("set a level to stop on it") , as per our example below, it will show that it stops on a parent with a class .my-section
+    // please be note that the stop point will not effect it will stop on that without apply the changing on the stop class or element
+
+    // $("span").parentsUntil(".my-section").css("border", "1px solid #f00");
+
+    // $("span").parentsUntil(".top").css("border", "1px solid #f00");
+
+    // $("span").parentsUntil(".my-section").fadeOut(2000);
+
+
+// });
