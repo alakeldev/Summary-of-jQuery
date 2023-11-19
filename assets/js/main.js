@@ -4,7 +4,7 @@
 // $("p").css("color", "red");
 
 
-// EVENTS 
+// EVENTS
 
 //** click event
 // $("button").click(function () {
@@ -141,7 +141,7 @@ opacity css property work*/
 
 
 //** fadeOut() =>  to make the fadeOut work the element must be Shown on the page(display: block....) not none
-// same hide() but also the fadeOut is base on opacity property 
+// same hide() but also the fadeOut is base on opacity property
 // $("button").click(function() {
 //     $("div").fadeOut(2000, function() {
 //         $("span").fadeOut(2000);
@@ -314,10 +314,10 @@ opacity css property work*/
 
 // stop() effect
 // Syntax of stop()  => stop(ClearQueue, goToEnd);   clearQueue => default value is False , goToEnd => default value is False
-// What is the meaning of False values the stop() if we didn't provide other value so stop it will stop the current animation only and 
-// will continue with the next animation (Queue list => animation list) 
-// on the below example if you press on stop button and you have as mentioned below many animation so when you press it you sill skip the current 
-// animation and it will continue on the next one 
+// What is the meaning of False values the stop() if we didn't provide other value so stop it will stop the current animation only and
+// will continue with the next animation (Queue list => animation list)
+// on the below example if you press on stop button and you have as mentioned below many animation so when you press it you sill skip the current
+// animation and it will continue on the next one
 
 // $("button").click(function () {
 //     $("div").stop();
@@ -342,7 +342,7 @@ opacity css property work*/
 
 
 
-// onother example, we are going to set the clearQueue as true 
+// onother example, we are going to set the clearQueue as true
 // here when we press on stop button it will stop all the animations because we are set the value of it as true
 // $("button").click(function () {
 //     $("div").stop(true);
@@ -509,7 +509,7 @@ opacity css property work*/
 // })
 
 // $("button").click(function () {
-//     $("a").attr("href", "https://www.jquery.com");    // here we set the href attribute new value 
+//     $("a").attr("href", "https://www.jquery.com");    // here we set the href attribute new value
 // })
 
 
@@ -519,7 +519,7 @@ opacity css property work*/
 //         "target":"xx",
 //         "href": "https://www.jquery.com",
 //         "class": "alakel"
-//     });    
+//     });
 //     // above we want to set new values from group of attributes we follow the way above IMPORTANT
 
 
@@ -617,7 +617,7 @@ opacity css property work*/
 // $("p").remove(" :contains('This')");
 
 /*-------------------------------------------------------------------------------*/
-// Empty 
+// Empty
 
 // $("div.jquery").empty();   // will empty the element from the elements and text too because the text by dom concept is a child too
 
@@ -636,7 +636,7 @@ opacity css property work*/
 // $("p").click(function() {
 
 //     // add class
-//     $(this).addClass("custom br"); // here we added two classes to the element p when we press on p 
+//     $(this).addClass("custom br"); // here we added two classes to the element p when we press on p
 
 // });
 
@@ -709,7 +709,7 @@ opacity css property work*/
 /*-------------------------------------------------------------------------------*/
 
 
-// Here we are focusing on the CSS properties 
+// Here we are focusing on the CSS properties
 
 // $(document).ready(function() {
 
@@ -722,7 +722,7 @@ opacity css property work*/
 
 //     $("input").val(color); // here we set the val of the input to the color value so it will appear on the input field
 
-//     $("<span></span>",{    
+//     $("<span></span>",{
 //         text: pad
 
 //     }).appendTo("body")   // here we append to body a new span with its text that it is equal to pad variable
@@ -794,7 +794,7 @@ opacity css property work*/
 //     console.log("Your Div Width is: " + $(this).width() + "px");
 // })
 
-// Example: 5 
+// Example: 5
 // $("div.dim").click(function () {
 //     $(this).width("+=" + 50);
 //     $(this).text("Your Div Width is: " + $(this).width() + "px");
@@ -915,85 +915,223 @@ opacity css property work*/
 // Traversing
 
 // $(document).ready(function () {
-    // $("span").parent().css("border","1px solid #00f");   // the target here is p because it's the direct parent of the span
+// $("span").parent().css("border","1px solid #00f");   // the target here is p because it's the direct parent of the span
 
-    // $("p").parent().css("border", "1px solid #00f");   // the target here is div because it's the direct parent of the p
+// $("p").parent().css("border", "1px solid #00f");   // the target here is div because it's the direct parent of the p
 
-    // $("div.top").parent().css("border", "1px solid #00f");   // the target here is section because it's the direct parent of the div.top
+// $("div.top").parent().css("border", "1px solid #00f");   // the target here is section because it's the direct parent of the div.top
 
-    // $("section").parent().css("border", "1px solid #00f");   // the target here is body because it's the direct parent of the section
-
-
-
-    //Example: 1
-    // $("span").parent().css({ 
-    //     padding :"40px", 
-    //     border:"1px solid #080",
-    //     width: "80%",
-    //     borderRadius: "10px",
-    // });
-
-
-    // Example: 2   Here the parent will also effect on its child too and it will fadeOut with it
-    // $("span").parent().fadeOut(2000);
+// $("section").parent().css("border", "1px solid #00f");   // the target here is body because it's the direct parent of the section
 
 
 
+//Example: 1
+// $("span").parent().css({
+//     padding :"40px",
+//     border:"1px solid #080",
+//     width: "80%",
+//     borderRadius: "10px",
+// });
 
-    //Parents   *Plural* Important  it will effect on all the parents of this child include the body and html tags
-    // $("p").parents().css("border", "1px solid #f00");
 
-    // Here with parents("make a filtration") to pick a specific parent from the parents with our example a parent with class .top
-    // $("span").parents(".top").css("border", "1px solid #f00");
+// Example: 2   Here the parent will also effect on its child too and it will fadeOut with it
+// $("span").parent().fadeOut(2000);
 
 
 
 
-    // parentsUntil("set a level to stop on it") , as per our example below, it will show that it stops on a parent with a class .my-section
-    // please be note that the stop point will not effect it will stop on that without apply the changing on the stop class or element
+//Parents   *Plural* Important  it will effect on all the parents of this child include the body and html tags
+// $("p").parents().css("border", "1px solid #f00");
 
-    // $("span").parentsUntil(".my-section").css("border", "1px solid #f00");
+// Here with parents("make a filtration") to pick a specific parent from the parents with our example a parent with class .top
+// $("span").parents(".top").css("border", "1px solid #f00");
 
-    // $("span").parentsUntil(".top").css("border", "1px solid #f00");
 
-    // $("span").parentsUntil(".my-section").fadeOut(2000);
+
+
+// parentsUntil("set a level to stop on it") , as per our example below, it will show that it stops on a parent with a class .my-section
+// please be note that the stop point will not effect it will stop on that without apply the changing on the stop class or element
+
+// $("span").parentsUntil(".my-section").css("border", "1px solid #f00");
+
+// $("span").parentsUntil(".top").css("border", "1px solid #f00");
+
+// $("span").parentsUntil(".my-section").fadeOut(2000);
 
 // });
 
 /*-------------------------------------------------------------------------------*/
 
-// Traversing Part 2 
+// Traversing Part 2
 
 // $(document).ready(function() {
-    
-    // children()  here it will return the direct children for the element (one level direct children only)
-    // console.log($("section").children());
-    
-    // console.log($("div").children());
 
-    // console.log($("p").children());
+// children()  here it will return the direct children for the element (one level direct children only)
+// console.log($("section").children());
 
+// console.log($("div").children());
 
-    // $("section").children().css("border", "1px solid #f00");  // only for direct children for the element
+// console.log($("p").children());
 
 
-    // $("section").children(".jquery").css("border", "1px solid #f00"); // Here you are saying to search on the section direct children on a specific child with a class .jquery but please be note that on the Direct Children ONLY
-
-    // $("div").children(".jquery").css("border", "1px solid #f00");
+// $("section").children().css("border", "1px solid #f00");  // only for direct children for the element
 
 
-    // find filtration     VERY VERY IMPORTANT TO EASY TARGET
-    // find it will search in all children levels not only one level same children()
-    // $("section").find("span").css("border", "1px solid #00f");
+// $("section").children(".jquery").css("border", "1px solid #f00"); // Here you are saying to search on the section direct children on a specific child with a class .jquery but please be note that on the Direct Children ONLY
 
-    // $("section").find(".jquery").css("border","1px solid #f00");
+// $("div").children(".jquery").css("border", "1px solid #f00");
 
 
-    // $("section").find("*").css("border", "1px solid #f00"); // all the element under the section will be effect here becasue of * but it must be under the section
+// find filtration     VERY VERY IMPORTANT TO EASY TARGET
+// find it will search in all children levels not only one level same children()
+// $("section").find("span").css("border", "1px solid #00f");
+
+// $("section").find(".jquery").css("border","1px solid #f00");
 
 
-    // $("section").find($("p:contains('Love')")).css("border","1px solid #0f0");  // Important here we are using jQuery object
-    // $("section").find($("p:contains('Facebook')")).css("border", "1px solid #f00"); // Here we using also filtration top search on paragraph that containing a specific word
+// $("section").find("*").css("border", "1px solid #f00"); // all the element under the section will be effect here becasue of * but it must be under the section
+
+
+// $("section").find($("p:contains('Love')")).css("border","1px solid #0f0");  // Important here we are using jQuery object
+// $("section").find($("p:contains('Facebook')")).css("border", "1px solid #f00"); // Here we using also filtration top search on paragraph that containing a specific word
+
+// });
+
+/*-------------------------------------------------------------------------------*/
+
+// traversing part 3
+// siblings
+// $(document).ready(function () {
+    // $("div:contains('jQuery')").siblings().css("border", "5px solid #00f"); // in this example we use siblings so it means all the siblings of this element except the element itself
+
+
+    // $("div:contains('jQuery')").siblings().slideUp(2000); // all the siblings of div:contains("jQuery") except this div itself will no effect on
+
+
+    // $("div, p").click(function() {
+    // $(this).siblings().slideUp(2000);
+    // $(this).siblings().fadeOut(2000);
+
+    // $(this).siblings(".select").fadeOut(2000); // Here it means that will search between the siblings on a siblings with a class .select
+
+    // try to click on one of the elements that have .select class but it will not fade as per our previouse example why?
+    // because even if it has a .select class but you click on it so the siblings will search on the siblings excluding the element that
+    // you clicked on so it will not effect and it will not fadeout as per our previous Example.
+
+    // });
+
+
+    ////////////////////////////
+    // Next  => the next element 
+
+    // $("div, p").click(function () {
+    // $(this).next().fadeOut(2000);
+
+    // $(this).next().css("border", "5px solid #f00");
+
+    // $(this).next().slideToggle(1000);   IMPORTANT IMPORTANT IMPORTANT 
+
+    // $(this).next(".test").slideToggle(1000);   // Here if you clicked on the element it will check on the next element if it has .test class if it has so it will toggle
+
+    // });
+
+
+    ///////////////////////////////
+    // prev => previous()
+
+    // $("div, p").click(function () {
+
+    // $(this).prev().slideToggle(2000);  // same the action of next but it effect not only next element, it will effect on the previous element
+
+    // $(this).prev(".test").slideToggle(2000) // here if you click on the element it will check on the previous element if it has .test class
+    // if it has so it will apply the .slideToggle on it 
+
+
+    // $(this).prev(".sa").css("border", "5px solid #00f");
+    // });
+
+
+
+
+    /////////////////////////////////
+    // next all => it means all the next elements 
+
+
+    // $("div, p").click(function () {
+        // $(this).nextAll().css("background", "#00f");
+
+
+        // $(this).nextAll(".test").css("background", "#00f"); // here we mention that from the element(exclude) that we clicked on.... check on all next elements 
+                                                            //if you find any element of them that it has .test class apply and effect on it
+
+
+        // $(this).nextAll("p").css("background", "#00f");
+
+
+        // $(this).nextAll("div").css("background", "#00f");
+
+
+        // $(this).nextAll("aside").css("background", "#00f");
+
+
+        // $(this).nextAll("*").css("background", "#00f");  // Here all the elements it means next all nextAll() === nextAll("*")
+
+    // });
+
+    /////////////////////////////////
+    //prevAll();   it means that all previouse Elements
+
+    // $("div, p, aside").click(function() {
+
+        // $(this).prevAll().css("background", "red");
+
+
+        // $(this).prevAll(".test").css("background", "red");  // Here also same nextAll example check on all previous element 
+                                                            //to check if it has class .test to effect and apply on it
+
+
+        // $(this).prevAll("div").css("background", "red");
+
+        // $(this).prevAll("p").css("background", "red");
+
+    // });
+
+
+    /////////////////////////////////
+    // nextUntil
+
+    // $("div, p, aside").click(function() {
+
+        // $(this).nextUntil().css("background", "#f00");  // if you didn't specify and value for nextUntill so it's working same nextAll()
+
+        // $(this).nextUntil(".test").css("background", "#f00");
+        // here it will start effect and apply on elements until it face an element with a class .test to it will stop there
+        
+        // $(this).nextUntil("aside").css("border","5px solid #f00");
+        // Here it will effect and apply on the elements until face an aside element so it will stop apply there
+    // });
+
+
+    /////////////////////////////////
+    //prevUntil
+
+    // $("div, p, aside").click(function() {
+
+        // $(this).prevUntil().css("border", "5px solid #0f0");  // if you didn't specify and value for prevUntil so it's working same prevAll()
+
+
+        // $(this).prevUntil(".test").css("background", "#f00");  
+        // here it will start effect and apply backward(previous) on elements until it face an element with a class .test to it will stop there
+
+
+        // $(this).prevUntil("div").css("border", "5px solid #f00");
+        // Here it will effect and apply on the elements BACKWARD until it face an div element so it will stop apply there
+
+    // });
 
 
 // });
+
+/*-------------------------------------------------------------------------------*/
+
+//Traversing Part 4
