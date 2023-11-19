@@ -1002,132 +1002,132 @@ opacity css property work*/
 // traversing part 3
 // siblings
 // $(document).ready(function () {
-    // $("div:contains('jQuery')").siblings().css("border", "5px solid #00f"); // in this example we use siblings so it means all the siblings of this element except the element itself
+// $("div:contains('jQuery')").siblings().css("border", "5px solid #00f"); // in this example we use siblings so it means all the siblings of this element except the element itself
 
 
-    // $("div:contains('jQuery')").siblings().slideUp(2000); // all the siblings of div:contains("jQuery") except this div itself will no effect on
+// $("div:contains('jQuery')").siblings().slideUp(2000); // all the siblings of div:contains("jQuery") except this div itself will no effect on
 
 
-    // $("div, p").click(function() {
-    // $(this).siblings().slideUp(2000);
-    // $(this).siblings().fadeOut(2000);
+// $("div, p").click(function() {
+// $(this).siblings().slideUp(2000);
+// $(this).siblings().fadeOut(2000);
 
-    // $(this).siblings(".select").fadeOut(2000); // Here it means that will search between the siblings on a siblings with a class .select
+// $(this).siblings(".select").fadeOut(2000); // Here it means that will search between the siblings on a siblings with a class .select
 
-    // try to click on one of the elements that have .select class but it will not fade as per our previouse example why?
-    // because even if it has a .select class but you click on it so the siblings will search on the siblings excluding the element that
-    // you clicked on so it will not effect and it will not fadeout as per our previous Example.
+// try to click on one of the elements that have .select class but it will not fade as per our previouse example why?
+// because even if it has a .select class but you click on it so the siblings will search on the siblings excluding the element that
+// you clicked on so it will not effect and it will not fadeout as per our previous Example.
 
-    // });
-
-
-    ////////////////////////////
-    // Next  => the next element 
-
-    // $("div, p").click(function () {
-    // $(this).next().fadeOut(2000);
-
-    // $(this).next().css("border", "5px solid #f00");
-
-    // $(this).next().slideToggle(1000);   IMPORTANT IMPORTANT IMPORTANT 
-
-    // $(this).next(".test").slideToggle(1000);   // Here if you clicked on the element it will check on the next element if it has .test class if it has so it will toggle
-
-    // });
+// });
 
 
-    ///////////////////////////////
-    // prev => previous()
+////////////////////////////
+// Next  => the next element 
 
-    // $("div, p").click(function () {
+// $("div, p").click(function () {
+// $(this).next().fadeOut(2000);
 
-    // $(this).prev().slideToggle(2000);  // same the action of next but it effect not only next element, it will effect on the previous element
+// $(this).next().css("border", "5px solid #f00");
 
-    // $(this).prev(".test").slideToggle(2000) // here if you click on the element it will check on the previous element if it has .test class
-    // if it has so it will apply the .slideToggle on it 
+// $(this).next().slideToggle(1000);   IMPORTANT IMPORTANT IMPORTANT 
 
+// $(this).next(".test").slideToggle(1000);   // Here if you clicked on the element it will check on the next element if it has .test class if it has so it will toggle
 
-    // $(this).prev(".sa").css("border", "5px solid #00f");
-    // });
-
-
+// });
 
 
-    /////////////////////////////////
-    // next all => it means all the next elements 
+///////////////////////////////
+// prev => previous()
+
+// $("div, p").click(function () {
+
+// $(this).prev().slideToggle(2000);  // same the action of next but it effect not only next element, it will effect on the previous element
+
+// $(this).prev(".test").slideToggle(2000) // here if you click on the element it will check on the previous element if it has .test class
+// if it has so it will apply the .slideToggle on it 
 
 
-    // $("div, p").click(function () {
-        // $(this).nextAll().css("background", "#00f");
+// $(this).prev(".sa").css("border", "5px solid #00f");
+// });
 
 
-        // $(this).nextAll(".test").css("background", "#00f"); // here we mention that from the element(exclude) that we clicked on.... check on all next elements 
-                                                            //if you find any element of them that it has .test class apply and effect on it
 
 
-        // $(this).nextAll("p").css("background", "#00f");
+/////////////////////////////////
+// next all => it means all the next elements 
 
 
-        // $(this).nextAll("div").css("background", "#00f");
+// $("div, p").click(function () {
+// $(this).nextAll().css("background", "#00f");
 
 
-        // $(this).nextAll("aside").css("background", "#00f");
+// $(this).nextAll(".test").css("background", "#00f"); // here we mention that from the element(exclude) that we clicked on.... check on all next elements 
+//if you find any element of them that it has .test class apply and effect on it
 
 
-        // $(this).nextAll("*").css("background", "#00f");  // Here all the elements it means next all nextAll() === nextAll("*")
-
-    // });
-
-    /////////////////////////////////
-    //prevAll();   it means that all previouse Elements
-
-    // $("div, p, aside").click(function() {
-
-        // $(this).prevAll().css("background", "red");
+// $(this).nextAll("p").css("background", "#00f");
 
 
-        // $(this).prevAll(".test").css("background", "red");  // Here also same nextAll example check on all previous element 
-                                                            //to check if it has class .test to effect and apply on it
+// $(this).nextAll("div").css("background", "#00f");
 
 
-        // $(this).prevAll("div").css("background", "red");
-
-        // $(this).prevAll("p").css("background", "red");
-
-    // });
+// $(this).nextAll("aside").css("background", "#00f");
 
 
-    /////////////////////////////////
-    // nextUntil
+// $(this).nextAll("*").css("background", "#00f");  // Here all the elements it means next all nextAll() === nextAll("*")
 
-    // $("div, p, aside").click(function() {
+// });
 
-        // $(this).nextUntil().css("background", "#f00");  // if you didn't specify and value for nextUntill so it's working same nextAll()
+/////////////////////////////////
+//prevAll();   it means that all previouse Elements
 
-        // $(this).nextUntil(".test").css("background", "#f00");
-        // here it will start effect and apply on elements until it face an element with a class .test to it will stop there
-        
-        // $(this).nextUntil("aside").css("border","5px solid #f00");
-        // Here it will effect and apply on the elements until face an aside element so it will stop apply there
-    // });
+// $("div, p, aside").click(function() {
+
+// $(this).prevAll().css("background", "red");
 
 
-    /////////////////////////////////
-    //prevUntil
-
-    // $("div, p, aside").click(function() {
-
-        // $(this).prevUntil().css("border", "5px solid #0f0");  // if you didn't specify and value for prevUntil so it's working same prevAll()
+// $(this).prevAll(".test").css("background", "red");  // Here also same nextAll example check on all previous element 
+//to check if it has class .test to effect and apply on it
 
 
-        // $(this).prevUntil(".test").css("background", "#f00");  
-        // here it will start effect and apply backward(previous) on elements until it face an element with a class .test to it will stop there
+// $(this).prevAll("div").css("background", "red");
+
+// $(this).prevAll("p").css("background", "red");
+
+// });
 
 
-        // $(this).prevUntil("div").css("border", "5px solid #f00");
-        // Here it will effect and apply on the elements BACKWARD until it face an div element so it will stop apply there
+/////////////////////////////////
+// nextUntil
 
-    // });
+// $("div, p, aside").click(function() {
+
+// $(this).nextUntil().css("background", "#f00");  // if you didn't specify and value for nextUntill so it's working same nextAll()
+
+// $(this).nextUntil(".test").css("background", "#f00");
+// here it will start effect and apply on elements until it face an element with a class .test to it will stop there
+
+// $(this).nextUntil("aside").css("border","5px solid #f00");
+// Here it will effect and apply on the elements until face an aside element so it will stop apply there
+// });
+
+
+/////////////////////////////////
+//prevUntil
+
+// $("div, p, aside").click(function() {
+
+// $(this).prevUntil().css("border", "5px solid #0f0");  // if you didn't specify and value for prevUntil so it's working same prevAll()
+
+
+// $(this).prevUntil(".test").css("background", "#f00");  
+// here it will start effect and apply backward(previous) on elements until it face an element with a class .test to it will stop there
+
+
+// $(this).prevUntil("div").css("border", "5px solid #f00");
+// Here it will effect and apply on the elements BACKWARD until it face an div element so it will stop apply there
+
+// });
 
 
 // });
@@ -1135,3 +1135,89 @@ opacity css property work*/
 /*-------------------------------------------------------------------------------*/
 
 //Traversing Part 4
+// $(document).ready(function () {
+    // first
+    // example: 1
+    // $("div").first().css("border","5px solid #f00");
+
+    // example: 2
+    // $("div").first().next().css("border", "5px solid #f00");
+
+    /////////////////////////////////
+
+    //last
+    // example: 1
+    // $("div").last().css("border", "5px solid #f00");
+
+    // example: 2
+    // $("div").last().prev().css("border", "5px solid #f00");
+
+    // Example: 3
+    // $("div").last().prevAll().css("border", "5px solid #f00");
+
+    /////////////////////////////////
+
+    // Equal it works with indexing , starting from 0 --->
+
+    // Examples:
+    // $("div").eq(0).css("border", "5px solid #f00");   // the first div
+    // $("div").eq(1).css("border", "5px solid #f00");   // the second div
+    // $("div").eq(-1).css("border", "5px solid #f00");   // the last div
+    // $("div").eq(-2).css("border", "5px solid #f00");   // the second div but backward from last
+    // $("div").eq(-2).next().css("border", "5px solid #f00");   //it means last div 
+    // $("div").eq(-2).prev().css("border", "5px solid #f00");   //the third div but backward from last
+    // $("div").eq(-1).prevAll().css("border", "5px solid #f00");   //it means last item then select all the previous items all
+
+    /////////////////////////////////
+
+    // Filter(you can write here class, element, jQuery Object, and function)
+
+
+    // $("div").filter(".jquery").css("border","5px solid #00f");  // target div with a class .jquery 
+
+
+    // $("div").filter(".jquery").next().css("border", "5px solid #00f");
+
+
+    // $("div").filter($(".jquery")).next().css("border", "5px solid #00f");  // jQuery object
+
+
+    // $("div").filter(function(alakel) { return alakel === 1;}).css("border","5px solid #00f");
+    // in the previouse example here we put a function as parameter for filter and inside the functio nthere is a parameter alakel
+    // and we return it as a number 1 so here it means that it return a number 1 and by indexing it's the second div that has 1 indexing 
+    // so it will effect on the div with indexing one 
+
+
+    // $("div").filter(function (alakel) { return alakel === 3; }).css("border", "5px solid #00f"); //here it will return the div number 4 
+
+    // $("div").filter(function (alakel) { return alakel === 3; }).next().css("border", "5px solid #00f"); //here it will return the div number 5 because of next()
+
+
+    /////////////////////////////////
+
+    // not it means not equal   => not(here it accepts class, element , jQuery object and function)
+
+    //VERY VERY IMPORTANT IN THE REAL LIFE SCENARIOS
+
+    // $("div").not(".jquery").css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
+
+    // $("div").not($(".jquery")).css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
+
+
+    // $("div").not(function (alakel) { return alakel === 2}).css("border", "5px solid #f00");
+    // our previous example will effect on all divs except on the div with indexing 2 that means the third div on the group
+
+
+
+    // two Examples below to show the difference between filter and not:
+
+
+    // $("div").not(":contains('jQuery')").css("border", "5px solid #f00"); // Here all divs that not contains jQuery word effect on it all
+
+    // $("div").filter(":contains('jQuery')").css("border", "5px solid #f00"); // Here check all divs and effect on div that only contains jQuery word
+
+// });
+
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------*/

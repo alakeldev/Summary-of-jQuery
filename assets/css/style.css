@@ -250,3 +250,18 @@ div, p , aside {
 } */
 
 /* Traversing Part 4  */
+
+/* div{
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ddd;
+    width: 400px;
+} */
+
+/* **************
+/* below only to show example how you can target first last and specific element through css so not related to jQuery */
+/* section div:first-child { color:red;}
+section div:last-child { color:red;}
+section div:nth-child(3) {
+    color: red;
+} */
