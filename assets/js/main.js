@@ -1331,3 +1331,61 @@ opacity css property work*/
 
 
 //  Selectors references part 3
+
+
+// $(document).ready(function() {
+    // only =====>>> child and of type
+    // $("p:only-child").css("border","2px solid #f00");    // it means that this targeted paragraph must be the only child of its parent to effect on it
+
+    // $("p:only-of-type").css("border", "2px solid #f00"); // here it means no problem to be not only child of its parent but it must be the only child from its type inside the parent to effect on it
+
+
+    //direct child   >
+    // $("div > p").css("border", "5px solid #f00");   // it means that it needs paragraph but it must be the direct child(level 1 child)
+
+
+    // // here it means all p inside div , what ever the level of the children without any care of the child level so it's general more than direct child
+    // $("div p").css("border", "5px solid #f00");
+
+
+
+
+
+    // next
+
+    // $("div + p").css("border","5px solid #f00"); // Here is means that div and the next element of this div will be paragraph to target this paragraph and effect on it
+
+
+    // $("div + h3").next().css("border","5px solid #f00"); // here it means that div the next element of it must be h3 so now because of next target the next element of that h3 and effect on it
+
+
+
+    // ~    siblings
+
+    // $("div ~ h3").css("border", "5px solid #f00");    // choose the h3 headings that are siblings brothers , and same level of the div not child not a parent, must be in the same level (siblings)
+
+
+
+
+    //equal(index)
+    // $("ul li:eq(0)").css("border","5px solid #f00");    // here it means that i want to target the first li which is its index 0 inside the ul
+
+
+    //gt(0) => greater than the targeted element by indexing ()
+    // $("ul li:gt(1)").css("border","5px solid #f00");  // it means that target all elements that greater than the second element which equal to index 1
+
+
+    // lt(0) => less than the targeted element by indexing ()
+    // $("ul li:lt(5)").css("border","5px solid #f00");   // it means that the element that has index = 4
+
+
+    // not
+    // $("ul li:not( :contains('5'))").css("border", "5px solid #f00");  // here we used not that it means in our example target any li that not contains text with a number 5
+
+
+    // $("ul li:not( :contains('number'))").css("border", "5px solid #f00"); // here w eused not that it means in our example target any li that not contain number word
+
+// });
+
+
+//  Selectors references part 4
