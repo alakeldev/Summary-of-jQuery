@@ -1221,3 +1221,70 @@ opacity css property work*/
 /*-------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------*/
+
+// Selectors references 
+
+// $(document).ready(function() {
+    
+    // -1:   *
+
+    // $("*").click(function () {    // the * here meaning all elements and this is related to * that means all elements 
+    //     $(this).fadeOut(500);
+    // });
+
+
+    // $("body *").css("border", "2px solid #00f");   // here it means all elements inside the body tag/element
+
+
+
+    // -2:   class
+
+    // $(".alakel").css("border","3px solid #00f");
+
+
+
+
+    // -3: ID
+    // $("#akel").css("border","5px solid #f00")
+
+
+    // -4: group classes
+    // $(".alakel, .fofo, .koko").css("border","2px solid #f00");
+
+
+    // -5: Element tag global ,
+    // $("div").css("border", "2px solid #f00");
+    // $("p").css("border", "2px solid #00f");
+
+
+    // -6: group elements
+    // $("p, div, aside").css("border", "2px solid #f00");
+
+
+    // -7: using filter with tags elements
+    // $("p").first().css("border", "2px solid #f00");
+    // $("p").last().css("border", "2px solid #f00");
+
+
+    // -8: using isndie the selector
+    // $("p:first").css("border", "2px solid #f00");
+    // $("div:last").css("border", "2px solid #f00");
+    // $("p:last, div:first, aside:last").css("border", "2px solid #00f");
+
+
+    // -9: mixing by using element tag and class and filter
+    // $("div, .koko, p:last").css("border","2px solid #f00");
+
+
+
+    // -10: even and odd:
+    // $("div:even").css("border","2px solid #f00");
+    // $("div:odd").css("border","2px solid #f00");
+
+
+    // $("div:odd").css("background", "#ddd");
+
+// });
+
+
+//  Selectors references part 2

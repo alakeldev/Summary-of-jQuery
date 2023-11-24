@@ -265,3 +265,24 @@ section div:last-child { color:red;}
 section div:nth-child(3) {
     color: red;
 } */
+
+
+
+/* Selectors references  part 1*/
+/* all tags and elements inside body tag*/
+/* body * {
+    padding: 10px;
+    margin: 0 0 5px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+} */
+
+
+/* div {
+    padding: 10px;
+} */
+
+
+
+
+/* Selectors references  part 2*/
