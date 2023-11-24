@@ -1288,3 +1288,46 @@ opacity css property work*/
 
 
 //  Selectors references part 2
+
+// $(document).ready(function () {
+    // $("p:first").css("border", "5px solid #f00"); // p first element on the page
+
+    // $("p:first-child").css("border", "5px solid #f00"); // p must be a first child of a parent like on our example p first child of body tag
+
+    // $("p:last-child").css("border", "5px solid #f00");  // be note here that must be last child for the parent and it must be p type also to be effect
+
+    // $("p:last").css("border", "5px solid #f00");        //last element on the page 
+
+
+    // $("div:first-of-type").css("border","2px solid #f00");   // it will target first element as a type = div inside each parent
+
+
+    // $("div:last-of-type").css("border","2px solid #f00");   // it will target last element as a type = div inside each parent
+
+
+    // Important nth-child(?)
+    // $("p:nth-child(2)").css("border","5px solid #00f");  // here it must be focus on two things it must be Paragraph and it must be the second child to take the effect on
+
+    // $("div:nth-child(3)").css("border","5px solid #f00"); // here it must be focus on two things it must be div and it must be also the third child of the parent to take the effect on
+
+
+    // example with using nth-child and next();
+    // $("div:nth-child(3)").next().css("border", "5px solid #f00");
+
+
+
+
+    // $("p:nth-last-child(2)").css("border", "5px solid #f00");
+
+
+
+
+    // $("div:nth-of-type(2)").css("border","2px solid #f00");
+    // $("p:nth-of-type(3)").css("border","2px solid #f00");
+
+
+//     $("p:nth-last-of-type(2)").css("color","green")
+// });
+
+
+//  Selectors references part 3
