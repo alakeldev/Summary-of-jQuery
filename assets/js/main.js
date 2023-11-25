@@ -1625,3 +1625,82 @@ opacity css property work*/
 //     // :selected => with select and inside option but it must be use selected inside the option
 //     console.log($(":selected").val());   // it will print the value of the selected option inside the console which is 500
 // });
+
+
+
+// EVENTS REFERENCE
+
+// BIND    you can set an event on the elements
+// Syntax : Bind(Event, Data, Function, Map)
+// event: required, data: optional, function: required
+
+// $(document).ready(function () {
+    // $(".normal").click(function () {
+    //     $(this).hide();
+    // });
+
+    // $(".normal").mouseenter(function () {
+    //     $(this).toggleClass("color");
+    // });
+
+    // $(".normal").mouseleave(function() {
+    //     $(this).toggleClass("color");
+    // })
+
+
+
+
+    // now example with bind
+    // $(".normal").bind("click", function () {
+    //         $(this).hide();
+    // });
+
+
+
+    // Multi events with bind   only put between events a one white space
+    // $(".normal").bind("mouseenter mouseleave", function() {
+    //     $(this).toggleClass("color")
+    // });
+
+
+
+
+    // Event map => i have an element and i have more than one event and each event has its own different action
+    // Important to understand the syntax of map events with bind
+    // $(".map").bind({
+    //     click: function() { $(this).text("You Have Clicked Me!")},
+    //     dblclick: function() {$(this).text("You Have Clicked Me Twice")},
+    //     mouseenter: function() {$(this).text("Your Cursor Is on Me!")},
+    //     mouseleave: function() {$(this).text("Your Cursor Is away from Me")}
+    // })
+
+
+
+
+//     // Custom event ======>>>> i want to make my own events 
+//     $(".custom").bind("myCustomEvent", function (event, myName, myAge) {
+//         $(this).text("Hello " + myName + "Your Age is: "+ myAge);
+//     });
+
+//     $("button").click(function() {
+//         $(".custom").trigger("myCustomEvent", ["Alakel", "30"]);
+
+//     });
+    
+
+
+//     // another Example with design ----- Important to understand the custom event IMPORTANT IMPORTANT
+//     $(".custom-event").bind("myCustomDesign", function (event, myHeight, myWidth, myBackGround, myColor) {
+//         $(this).height(myHeight).width(myWidth).css({
+//             backgroundColor: myBackGround,
+//             color: myColor
+
+//         });
+//     });
+
+//     $("a").click(function () {
+//         $(".custom-event").trigger("myCustomDesign", ["400px", "800px", "red", "#fff"]);
+
+//     });
+
+// });
