@@ -1488,3 +1488,84 @@ opacity css property work*/
 
 
 //  Selectors references part 5
+
+// $(document).ready(function() {
+//     // $("[src]").css("border-radius", "50%");  // here it means any element has attribute src will be effect on
+
+//     // $("[title]").css("border-radius", "50%");  // here it means any element has attribute title will be effect on
+
+//     // $("[alt]").css("border-radius", "50%");     // here it means any element has attribute alt will be effect on
+
+
+
+
+//     // $("[alt='image 2']").css("border-radius", "50%"); // here it means the element that has an attribute called alt and its value = image 2
+
+//     // $("[title='Test 3']").css("border-radius", "50%");  // here it means the element that has an attribute called title and its value = Test 3
+
+
+//     // $("[lang]").css("color", "#00f");  // any element that has attribte lang
+
+//     // $("p[lang]").css("color", "#00f");  // here it means that p that has attribute lang
+
+
+
+//     // $("div[lang='ar']").css("color", "#00f");   //  here it means that div that has attribute lang and its value = 'ar'
+
+
+
+//     // Important !=   (Not Equal)
+//     // $("div[lang!='ar']").css("color", "#00f");  // here !=  not equal means so i need the div that its attribute lang not equal to ar
+
+
+//     // $("img[title!='Test 3']").css("border-radius", "50%"); // so here it will target the images that it has a title attribute but its value not equal to Test 3
+
+//     // $("[title], [lang]").fadeOut(4000); // all elements that have title and lang attribute make a fadeout on them
+
+
+//     // $("img[alt='image 3'], div[lang='ar']").fadeOut(2000); // here we group two element with set the attribute and its value for each one 
+
+
+
+
+//     // below focus on *   any sentence has the word, it no need a specific word stands alon it search with ing with past form no worries 
+
+//     // alt* = ' ' Here the * it means that search inside the value of alt attribute on word My    
+//     $("img[alt*='My']").css("border-radius","50%");
+//     // it means that search inside the value of alt attribute on word Your
+//     $("img[alt*='Your']").css("border-radius", "50%");
+
+    
+//     // i want an image that the title attribute its value has a word PHP inside the value so it can be PHP *** and other words because of *
+//     $("img[title*='PHP']").css("border-radius", "50%");
+
+
+
+
+//     // below focus on ~   here it needs a specific word exactly, here it needs exaclty this word stands alone
+//     $("img[title~='Test 3']").css("border-radius", "50%"); // 
+
+
+
+
+//     // ^   here it means starting with only 
+//     $("div[lang^='fr']").css("color", "green"); //
+
+
+
+
+// // the summary: of part 5 selectors 
+
+// // 1- [attribute] => [title]
+// // 2- element[attribute] => img[src]
+// // 3- element[attribute = 'value'] => p[lang ='en']
+// // 4- element[attribute != 'value'] => div[lang != 'ar']
+// // 5- element[attribute*= 'value'] => a[href*='link']
+// // 6- element[attribute~= 'value'] => a[href~='contains']
+// // 7- element[attribute^= 'value'] => a[href^='start']
+
+
+// });
+
+
+// Selectors references part 6
