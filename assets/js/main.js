@@ -1136,85 +1136,85 @@ opacity css property work*/
 
 //Traversing Part 4
 // $(document).ready(function () {
-    // first
-    // example: 1
-    // $("div").first().css("border","5px solid #f00");
+// first
+// example: 1
+// $("div").first().css("border","5px solid #f00");
 
-    // example: 2
-    // $("div").first().next().css("border", "5px solid #f00");
+// example: 2
+// $("div").first().next().css("border", "5px solid #f00");
 
-    /////////////////////////////////
+/////////////////////////////////
 
-    //last
-    // example: 1
-    // $("div").last().css("border", "5px solid #f00");
+//last
+// example: 1
+// $("div").last().css("border", "5px solid #f00");
 
-    // example: 2
-    // $("div").last().prev().css("border", "5px solid #f00");
+// example: 2
+// $("div").last().prev().css("border", "5px solid #f00");
 
-    // Example: 3
-    // $("div").last().prevAll().css("border", "5px solid #f00");
+// Example: 3
+// $("div").last().prevAll().css("border", "5px solid #f00");
 
-    /////////////////////////////////
+/////////////////////////////////
 
-    // Equal it works with indexing , starting from 0 --->
+// Equal it works with indexing , starting from 0 --->
 
-    // Examples:
-    // $("div").eq(0).css("border", "5px solid #f00");   // the first div
-    // $("div").eq(1).css("border", "5px solid #f00");   // the second div
-    // $("div").eq(-1).css("border", "5px solid #f00");   // the last div
-    // $("div").eq(-2).css("border", "5px solid #f00");   // the second div but backward from last
-    // $("div").eq(-2).next().css("border", "5px solid #f00");   //it means last div 
-    // $("div").eq(-2).prev().css("border", "5px solid #f00");   //the third div but backward from last
-    // $("div").eq(-1).prevAll().css("border", "5px solid #f00");   //it means last item then select all the previous items all
+// Examples:
+// $("div").eq(0).css("border", "5px solid #f00");   // the first div
+// $("div").eq(1).css("border", "5px solid #f00");   // the second div
+// $("div").eq(-1).css("border", "5px solid #f00");   // the last div
+// $("div").eq(-2).css("border", "5px solid #f00");   // the second div but backward from last
+// $("div").eq(-2).next().css("border", "5px solid #f00");   //it means last div 
+// $("div").eq(-2).prev().css("border", "5px solid #f00");   //the third div but backward from last
+// $("div").eq(-1).prevAll().css("border", "5px solid #f00");   //it means last item then select all the previous items all
 
-    /////////////////////////////////
+/////////////////////////////////
 
-    // Filter(you can write here class, element, jQuery Object, and function)
-
-
-    // $("div").filter(".jquery").css("border","5px solid #00f");  // target div with a class .jquery 
+// Filter(you can write here class, element, jQuery Object, and function)
 
 
-    // $("div").filter(".jquery").next().css("border", "5px solid #00f");
+// $("div").filter(".jquery").css("border","5px solid #00f");  // target div with a class .jquery 
 
 
-    // $("div").filter($(".jquery")).next().css("border", "5px solid #00f");  // jQuery object
+// $("div").filter(".jquery").next().css("border", "5px solid #00f");
 
 
-    // $("div").filter(function(alakel) { return alakel === 1;}).css("border","5px solid #00f");
-    // in the previouse example here we put a function as parameter for filter and inside the functio nthere is a parameter alakel
-    // and we return it as a number 1 so here it means that it return a number 1 and by indexing it's the second div that has 1 indexing 
-    // so it will effect on the div with indexing one 
+// $("div").filter($(".jquery")).next().css("border", "5px solid #00f");  // jQuery object
 
 
-    // $("div").filter(function (alakel) { return alakel === 3; }).css("border", "5px solid #00f"); //here it will return the div number 4 
-
-    // $("div").filter(function (alakel) { return alakel === 3; }).next().css("border", "5px solid #00f"); //here it will return the div number 5 because of next()
-
-
-    /////////////////////////////////
-
-    // not it means not equal   => not(here it accepts class, element , jQuery object and function)
-
-    //VERY VERY IMPORTANT IN THE REAL LIFE SCENARIOS
-
-    // $("div").not(".jquery").css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
-
-    // $("div").not($(".jquery")).css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
+// $("div").filter(function(alakel) { return alakel === 1;}).css("border","5px solid #00f");
+// in the previouse example here we put a function as parameter for filter and inside the functio nthere is a parameter alakel
+// and we return it as a number 1 so here it means that it return a number 1 and by indexing it's the second div that has 1 indexing 
+// so it will effect on the div with indexing one 
 
 
-    // $("div").not(function (alakel) { return alakel === 2}).css("border", "5px solid #f00");
-    // our previous example will effect on all divs except on the div with indexing 2 that means the third div on the group
+// $("div").filter(function (alakel) { return alakel === 3; }).css("border", "5px solid #00f"); //here it will return the div number 4 
+
+// $("div").filter(function (alakel) { return alakel === 3; }).next().css("border", "5px solid #00f"); //here it will return the div number 5 because of next()
+
+
+/////////////////////////////////
+
+// not it means not equal   => not(here it accepts class, element , jQuery object and function)
+
+//VERY VERY IMPORTANT IN THE REAL LIFE SCENARIOS
+
+// $("div").not(".jquery").css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
+
+// $("div").not($(".jquery")).css("border", "5px solid #f00"); // here it will apply and effect in all divs except that has .jquery class
+
+
+// $("div").not(function (alakel) { return alakel === 2}).css("border", "5px solid #f00");
+// our previous example will effect on all divs except on the div with indexing 2 that means the third div on the group
 
 
 
-    // two Examples below to show the difference between filter and not:
+// two Examples below to show the difference between filter and not:
 
 
-    // $("div").not(":contains('jQuery')").css("border", "5px solid #f00"); // Here all divs that not contains jQuery word effect on it all
+// $("div").not(":contains('jQuery')").css("border", "5px solid #f00"); // Here all divs that not contains jQuery word effect on it all
 
-    // $("div").filter(":contains('jQuery')").css("border", "5px solid #f00"); // Here check all divs and effect on div that only contains jQuery word
+// $("div").filter(":contains('jQuery')").css("border", "5px solid #f00"); // Here check all divs and effect on div that only contains jQuery word
 
 // });
 
@@ -1225,64 +1225,64 @@ opacity css property work*/
 // Selectors references 
 
 // $(document).ready(function() {
-    
-    // -1:   *
 
-    // $("*").click(function () {    // the * here meaning all elements and this is related to * that means all elements 
-    //     $(this).fadeOut(500);
-    // });
+// -1:   *
 
-
-    // $("body *").css("border", "2px solid #00f");   // here it means all elements inside the body tag/element
+// $("*").click(function () {    // the * here meaning all elements and this is related to * that means all elements 
+//     $(this).fadeOut(500);
+// });
 
 
-
-    // -2:   class
-
-    // $(".alakel").css("border","3px solid #00f");
+// $("body *").css("border", "2px solid #00f");   // here it means all elements inside the body tag/element
 
 
 
+// -2:   class
 
-    // -3: ID
-    // $("#akel").css("border","5px solid #f00")
-
-
-    // -4: group classes
-    // $(".alakel, .fofo, .koko").css("border","2px solid #f00");
-
-
-    // -5: Element tag global ,
-    // $("div").css("border", "2px solid #f00");
-    // $("p").css("border", "2px solid #00f");
-
-
-    // -6: group elements
-    // $("p, div, aside").css("border", "2px solid #f00");
-
-
-    // -7: using filter with tags elements
-    // $("p").first().css("border", "2px solid #f00");
-    // $("p").last().css("border", "2px solid #f00");
-
-
-    // -8: using isndie the selector
-    // $("p:first").css("border", "2px solid #f00");
-    // $("div:last").css("border", "2px solid #f00");
-    // $("p:last, div:first, aside:last").css("border", "2px solid #00f");
-
-
-    // -9: mixing by using element tag and class and filter
-    // $("div, .koko, p:last").css("border","2px solid #f00");
+// $(".alakel").css("border","3px solid #00f");
 
 
 
-    // -10: even and odd:
-    // $("div:even").css("border","2px solid #f00");
-    // $("div:odd").css("border","2px solid #f00");
+
+// -3: ID
+// $("#akel").css("border","5px solid #f00")
 
 
-    // $("div:odd").css("background", "#ddd");
+// -4: group classes
+// $(".alakel, .fofo, .koko").css("border","2px solid #f00");
+
+
+// -5: Element tag global ,
+// $("div").css("border", "2px solid #f00");
+// $("p").css("border", "2px solid #00f");
+
+
+// -6: group elements
+// $("p, div, aside").css("border", "2px solid #f00");
+
+
+// -7: using filter with tags elements
+// $("p").first().css("border", "2px solid #f00");
+// $("p").last().css("border", "2px solid #f00");
+
+
+// -8: using isndie the selector
+// $("p:first").css("border", "2px solid #f00");
+// $("div:last").css("border", "2px solid #f00");
+// $("p:last, div:first, aside:last").css("border", "2px solid #00f");
+
+
+// -9: mixing by using element tag and class and filter
+// $("div, .koko, p:last").css("border","2px solid #f00");
+
+
+
+// -10: even and odd:
+// $("div:even").css("border","2px solid #f00");
+// $("div:odd").css("border","2px solid #f00");
+
+
+// $("div:odd").css("background", "#ddd");
 
 // });
 
@@ -1290,40 +1290,40 @@ opacity css property work*/
 //  Selectors references part 2
 
 // $(document).ready(function () {
-    // $("p:first").css("border", "5px solid #f00"); // p first element on the page
+// $("p:first").css("border", "5px solid #f00"); // p first element on the page
 
-    // $("p:first-child").css("border", "5px solid #f00"); // p must be a first child of a parent like on our example p first child of body tag
+// $("p:first-child").css("border", "5px solid #f00"); // p must be a first child of a parent like on our example p first child of body tag
 
-    // $("p:last-child").css("border", "5px solid #f00");  // be note here that must be last child for the parent and it must be p type also to be effect
+// $("p:last-child").css("border", "5px solid #f00");  // be note here that must be last child for the parent and it must be p type also to be effect
 
-    // $("p:last").css("border", "5px solid #f00");        //last element on the page 
-
-
-    // $("div:first-of-type").css("border","2px solid #f00");   // it will target first element as a type = div inside each parent
+// $("p:last").css("border", "5px solid #f00");        //last element on the page 
 
 
-    // $("div:last-of-type").css("border","2px solid #f00");   // it will target last element as a type = div inside each parent
+// $("div:first-of-type").css("border","2px solid #f00");   // it will target first element as a type = div inside each parent
 
 
-    // Important nth-child(?)
-    // $("p:nth-child(2)").css("border","5px solid #00f");  // here it must be focus on two things it must be Paragraph and it must be the second child to take the effect on
-
-    // $("div:nth-child(3)").css("border","5px solid #f00"); // here it must be focus on two things it must be div and it must be also the third child of the parent to take the effect on
+// $("div:last-of-type").css("border","2px solid #f00");   // it will target last element as a type = div inside each parent
 
 
-    // example with using nth-child and next();
-    // $("div:nth-child(3)").next().css("border", "5px solid #f00");
+// Important nth-child(?)
+// $("p:nth-child(2)").css("border","5px solid #00f");  // here it must be focus on two things it must be Paragraph and it must be the second child to take the effect on
+
+// $("div:nth-child(3)").css("border","5px solid #f00"); // here it must be focus on two things it must be div and it must be also the third child of the parent to take the effect on
 
 
-
-
-    // $("p:nth-last-child(2)").css("border", "5px solid #f00");
+// example with using nth-child and next();
+// $("div:nth-child(3)").next().css("border", "5px solid #f00");
 
 
 
 
-    // $("div:nth-of-type(2)").css("border","2px solid #f00");
-    // $("p:nth-of-type(3)").css("border","2px solid #f00");
+// $("p:nth-last-child(2)").css("border", "5px solid #f00");
+
+
+
+
+// $("div:nth-of-type(2)").css("border","2px solid #f00");
+// $("p:nth-of-type(3)").css("border","2px solid #f00");
 
 
 //     $("p:nth-last-of-type(2)").css("color","green")
@@ -1334,58 +1334,157 @@ opacity css property work*/
 
 
 // $(document).ready(function() {
-    // only =====>>> child and of type
-    // $("p:only-child").css("border","2px solid #f00");    // it means that this targeted paragraph must be the only child of its parent to effect on it
+// only =====>>> child and of type
+// $("p:only-child").css("border","2px solid #f00");    // it means that this targeted paragraph must be the only child of its parent to effect on it
 
-    // $("p:only-of-type").css("border", "2px solid #f00"); // here it means no problem to be not only child of its parent but it must be the only child from its type inside the parent to effect on it
-
-
-    //direct child   >
-    // $("div > p").css("border", "5px solid #f00");   // it means that it needs paragraph but it must be the direct child(level 1 child)
+// $("p:only-of-type").css("border", "2px solid #f00"); // here it means no problem to be not only child of its parent but it must be the only child from its type inside the parent to effect on it
 
 
-    // // here it means all p inside div , what ever the level of the children without any care of the child level so it's general more than direct child
-    // $("div p").css("border", "5px solid #f00");
+//direct child   >
+// $("div > p").css("border", "5px solid #f00");   // it means that it needs paragraph but it must be the direct child(level 1 child)
 
 
-
-
-
-    // next
-
-    // $("div + p").css("border","5px solid #f00"); // Here is means that div and the next element of this div will be paragraph to target this paragraph and effect on it
-
-
-    // $("div + h3").next().css("border","5px solid #f00"); // here it means that div the next element of it must be h3 so now because of next target the next element of that h3 and effect on it
-
-
-
-    // ~    siblings
-
-    // $("div ~ h3").css("border", "5px solid #f00");    // choose the h3 headings that are siblings brothers , and same level of the div not child not a parent, must be in the same level (siblings)
+// // here it means all p inside div , what ever the level of the children without any care of the child level so it's general more than direct child
+// $("div p").css("border", "5px solid #f00");
 
 
 
 
-    //equal(index)
-    // $("ul li:eq(0)").css("border","5px solid #f00");    // here it means that i want to target the first li which is its index 0 inside the ul
+
+// next
+
+// $("div + p").css("border","5px solid #f00"); // Here is means that div and the next element of this div will be paragraph to target this paragraph and effect on it
 
 
-    //gt(0) => greater than the targeted element by indexing ()
-    // $("ul li:gt(1)").css("border","5px solid #f00");  // it means that target all elements that greater than the second element which equal to index 1
+// $("div + h3").next().css("border","5px solid #f00"); // here it means that div the next element of it must be h3 so now because of next target the next element of that h3 and effect on it
 
 
-    // lt(0) => less than the targeted element by indexing ()
-    // $("ul li:lt(5)").css("border","5px solid #f00");   // it means that the element that has index = 4
+
+// ~    siblings
+
+// $("div ~ h3").css("border", "5px solid #f00");    // choose the h3 headings that are siblings brothers , and same level of the div not child not a parent, must be in the same level (siblings)
 
 
-    // not
-    // $("ul li:not( :contains('5'))").css("border", "5px solid #f00");  // here we used not that it means in our example target any li that not contains text with a number 5
 
 
-    // $("ul li:not( :contains('number'))").css("border", "5px solid #f00"); // here w eused not that it means in our example target any li that not contain number word
+//equal(index)
+// $("ul li:eq(0)").css("border","5px solid #f00");    // here it means that i want to target the first li which is its index 0 inside the ul
+
+
+//gt(0) => greater than the targeted element by indexing ()
+// $("ul li:gt(1)").css("border","5px solid #f00");  // it means that target all elements that greater than the second element which equal to index 1
+
+
+// lt(0) => less than the targeted element by indexing ()
+// $("ul li:lt(5)").css("border","5px solid #f00");   // it means that the element that has index = 4
+
+
+// not
+// $("ul li:not( :contains('5'))").css("border", "5px solid #f00");  // here we used not that it means in our example target any li that not contains text with a number 5
+
+
+// $("ul li:not( :contains('number'))").css("border", "5px solid #f00"); // here w eused not that it means in our example target any li that not contain number word
 
 // });
 
 
 //  Selectors references part 4
+
+// $(document).ready(function () {
+    // // select all the headers inside your page h1 ----> h6    :header
+    // $(":header").css("color", "#00f");
+
+    // // Animated select on element that its status is animating
+    // $("div").animate({ width: "500px" }, 8000);
+    // $("div").animate({ height: "300px" }, 8000);
+
+
+    // $("p").animate({ width: "500px" }, 8000);
+
+    // // click on h1 to change the color of the animated div and paragraph
+    // $("h1").click(function () {
+    //     $(":animated").css({ background: "#f00", color: "#fff" });     // it means that check the animated items that already starting animation inside the page and use the effect on this element
+    // });                                                                 // also i make the paragraph animated so it will effect on it too when we click on the header one
+
+
+
+    // focus
+
+    // $("input").focus(); // 1- we choose the element that we want to make focus on it 
+    // $(":focus").css("padding","20px");  // here we take the selector reference that take focused element to make effect on it 
+
+
+
+    // contains
+    // $("div:contains(2)").animate({width: "500px"}, 8000);
+    // $("div:contains('This')").animate({width: "500px"}, 8000).css("background", "#f00");
+
+
+
+
+    // has
+    // $("div:has('p')").css("color", "#080");   // here we want div that has paragraph to effect on
+
+    // $("div:has('span')").css("color", "#f00");  // here we want div that has span inside it to effect on
+
+    // $("div:has('.alakel')").css("color", "#f00");   // here we want div that has an element that its class = .alakel
+
+    // $("div:has('#alakel')").css("color", "#f00");    // here we want div that has an element that its id = #alakel
+
+
+
+
+    // empty
+    // $(":empty").css("background", "#080");    // target all empty elements on the page 
+
+
+    // parent
+    // $(":parent").css("border", "1px solid #f00");    // target all the elements that it's a parent and that's meaning which has a child or text inside it
+
+
+    // note to understand the previouse:    empty != parent
+
+
+
+
+
+    // :hidden it means all the hidden element inside the page
+    // Important note that it will effect on the elements that display: none; and it will not effect on element that make its visibility: hidden;
+    // the reason because Visibility: hidden; the elements are on the page not same display: none; which mean the elements left the page the not there any more
+
+    // $("button").click(function () {
+    //     $(":hidden").fadeIn(2000);
+    // });
+
+
+
+    // : Visible it means all elements visible that you can see it on the page 
+    // $("button").click(function () {
+    //     // $(":visible").css("background", "#f00"); //it means all elements visible that you can see it on the page 
+
+    //     // $("div:visible").css("background", "#f00");  // it means all div elements visible that you can see it on the page 
+
+    //     // $("div:visible").slideToggle(1000); // the divs visible will hide it on the page
+
+    //     // $("div:hidden").slideToggle(1000);  // the divs hidden will show it on the page
+    // });
+
+
+    // :root =====>>>>> HTML tag
+    // $(":root").addClass("js");
+    // $(":root").css("background", "green");
+
+
+
+
+    // lang attribute
+
+    // $("p:lang('en')").css("color", "red");    // to effect on the paragraph that has attribute lang = en
+    // $("p:lang('ar')").css("background", "gray"); // to effect on the paragraph that has attribute lang = ar
+
+// });
+
+
+
+
+//  Selectors references part 5
