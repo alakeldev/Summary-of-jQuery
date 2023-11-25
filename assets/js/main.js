@@ -1391,96 +1391,96 @@ opacity css property work*/
 //  Selectors references part 4
 
 // $(document).ready(function () {
-    // // select all the headers inside your page h1 ----> h6    :header
-    // $(":header").css("color", "#00f");
+// // select all the headers inside your page h1 ----> h6    :header
+// $(":header").css("color", "#00f");
 
-    // // Animated select on element that its status is animating
-    // $("div").animate({ width: "500px" }, 8000);
-    // $("div").animate({ height: "300px" }, 8000);
-
-
-    // $("p").animate({ width: "500px" }, 8000);
-
-    // // click on h1 to change the color of the animated div and paragraph
-    // $("h1").click(function () {
-    //     $(":animated").css({ background: "#f00", color: "#fff" });     // it means that check the animated items that already starting animation inside the page and use the effect on this element
-    // });                                                                 // also i make the paragraph animated so it will effect on it too when we click on the header one
+// // Animated select on element that its status is animating
+// $("div").animate({ width: "500px" }, 8000);
+// $("div").animate({ height: "300px" }, 8000);
 
 
+// $("p").animate({ width: "500px" }, 8000);
 
-    // focus
-
-    // $("input").focus(); // 1- we choose the element that we want to make focus on it 
-    // $(":focus").css("padding","20px");  // here we take the selector reference that take focused element to make effect on it 
+// // click on h1 to change the color of the animated div and paragraph
+// $("h1").click(function () {
+//     $(":animated").css({ background: "#f00", color: "#fff" });     // it means that check the animated items that already starting animation inside the page and use the effect on this element
+// });                                                                 // also i make the paragraph animated so it will effect on it too when we click on the header one
 
 
 
-    // contains
-    // $("div:contains(2)").animate({width: "500px"}, 8000);
-    // $("div:contains('This')").animate({width: "500px"}, 8000).css("background", "#f00");
+// focus
+
+// $("input").focus(); // 1- we choose the element that we want to make focus on it 
+// $(":focus").css("padding","20px");  // here we take the selector reference that take focused element to make effect on it 
 
 
 
-
-    // has
-    // $("div:has('p')").css("color", "#080");   // here we want div that has paragraph to effect on
-
-    // $("div:has('span')").css("color", "#f00");  // here we want div that has span inside it to effect on
-
-    // $("div:has('.alakel')").css("color", "#f00");   // here we want div that has an element that its class = .alakel
-
-    // $("div:has('#alakel')").css("color", "#f00");    // here we want div that has an element that its id = #alakel
+// contains
+// $("div:contains(2)").animate({width: "500px"}, 8000);
+// $("div:contains('This')").animate({width: "500px"}, 8000).css("background", "#f00");
 
 
 
 
-    // empty
-    // $(":empty").css("background", "#080");    // target all empty elements on the page 
+// has
+// $("div:has('p')").css("color", "#080");   // here we want div that has paragraph to effect on
 
+// $("div:has('span')").css("color", "#f00");  // here we want div that has span inside it to effect on
 
-    // parent
-    // $(":parent").css("border", "1px solid #f00");    // target all the elements that it's a parent and that's meaning which has a child or text inside it
+// $("div:has('.alakel')").css("color", "#f00");   // here we want div that has an element that its class = .alakel
 
-
-    // note to understand the previouse:    empty != parent
-
-
-
-
-
-    // :hidden it means all the hidden element inside the page
-    // Important note that it will effect on the elements that display: none; and it will not effect on element that make its visibility: hidden;
-    // the reason because Visibility: hidden; the elements are on the page not same display: none; which mean the elements left the page the not there any more
-
-    // $("button").click(function () {
-    //     $(":hidden").fadeIn(2000);
-    // });
-
-
-
-    // : Visible it means all elements visible that you can see it on the page 
-    // $("button").click(function () {
-    //     // $(":visible").css("background", "#f00"); //it means all elements visible that you can see it on the page 
-
-    //     // $("div:visible").css("background", "#f00");  // it means all div elements visible that you can see it on the page 
-
-    //     // $("div:visible").slideToggle(1000); // the divs visible will hide it on the page
-
-    //     // $("div:hidden").slideToggle(1000);  // the divs hidden will show it on the page
-    // });
-
-
-    // :root =====>>>>> HTML tag
-    // $(":root").addClass("js");
-    // $(":root").css("background", "green");
+// $("div:has('#alakel')").css("color", "#f00");    // here we want div that has an element that its id = #alakel
 
 
 
 
-    // lang attribute
+// empty
+// $(":empty").css("background", "#080");    // target all empty elements on the page 
 
-    // $("p:lang('en')").css("color", "red");    // to effect on the paragraph that has attribute lang = en
-    // $("p:lang('ar')").css("background", "gray"); // to effect on the paragraph that has attribute lang = ar
+
+// parent
+// $(":parent").css("border", "1px solid #f00");    // target all the elements that it's a parent and that's meaning which has a child or text inside it
+
+
+// note to understand the previouse:    empty != parent
+
+
+
+
+
+// :hidden it means all the hidden element inside the page
+// Important note that it will effect on the elements that display: none; and it will not effect on element that make its visibility: hidden;
+// the reason because Visibility: hidden; the elements are on the page not same display: none; which mean the elements left the page the not there any more
+
+// $("button").click(function () {
+//     $(":hidden").fadeIn(2000);
+// });
+
+
+
+// : Visible it means all elements visible that you can see it on the page 
+// $("button").click(function () {
+//     // $(":visible").css("background", "#f00"); //it means all elements visible that you can see it on the page 
+
+//     // $("div:visible").css("background", "#f00");  // it means all div elements visible that you can see it on the page 
+
+//     // $("div:visible").slideToggle(1000); // the divs visible will hide it on the page
+
+//     // $("div:hidden").slideToggle(1000);  // the divs hidden will show it on the page
+// });
+
+
+// :root =====>>>>> HTML tag
+// $(":root").addClass("js");
+// $(":root").css("background", "green");
+
+
+
+
+// lang attribute
+
+// $("p:lang('en')").css("color", "red");    // to effect on the paragraph that has attribute lang = en
+// $("p:lang('ar')").css("background", "gray"); // to effect on the paragraph that has attribute lang = ar
 
 // });
 
@@ -1535,7 +1535,7 @@ opacity css property work*/
 //     // it means that search inside the value of alt attribute on word Your
 //     $("img[alt*='Your']").css("border-radius", "50%");
 
-    
+
 //     // i want an image that the title attribute its value has a word PHP inside the value so it can be PHP *** and other words because of *
 //     $("img[title*='PHP']").css("border-radius", "50%");
 
@@ -1569,3 +1569,59 @@ opacity css property work*/
 
 
 // Selectors references part 6
+
+// $(document).ready(function () {
+//     // select all the input on the page
+//     $(":input").css("display", "block");
+
+//     // // you can also set for the previous example a parent element as our example it is a body element so it will be as per below:
+//     // $("body:input").css("display", "block");
+
+//     // // if the input inside a parent div
+//     // $("div :text").click(function () {
+//     //     $(this).fadeOut(2000);
+//     // });
+
+//     // $(":password").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+//     // $(":submit").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+//     // $(":reset").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+//     // $(":checkbox").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+//     // $(":radio").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+//     // $(":file").click(function () {
+//     //     $(this).fadeOut(2000)
+//     // });
+
+
+
+//     // choose the input that was disabled
+//     // $(":disabled").fadeOut(5000);
+
+
+//     // choose the input that was enabled all inputs that enabled so it will make for all inputs that were not disabled
+//     // $(":enabled").fadeOut(5000);
+
+
+
+//     // :checked =====> radio or checkbox only you must be set its value on html as a checked to can target it with below
+//     // $(":checked").fadeOut(2000);
+
+
+
+//     // :selected => with select and inside option but it must be use selected inside the option
+//     console.log($(":selected").val());   // it will print the value of the selected option inside the console which is 500
+// });
