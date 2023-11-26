@@ -1852,3 +1852,27 @@ opacity css property work*/
 
 
 // });
+
+
+
+// Change()   event Reference
+
+// Change same keyup but the change is working with only input form
+
+// $(document).ready(function () {
+
+    // $("input").on("change", function () {
+    //         $("div h2").text($(this).val());   //Here the change will show the text that i'm writing inside the input after remove the focus from the input
+    //     });                                     /// very important note to take care about it
+
+    //     $("textarea").on("change", function() {
+    //         $("div p").text($(this).val());   // must move the focus from the textarea so it will take the text from the textarea
+    //     });
+
+
+        // Important with select the change will work only because to key press here or keyup,,,,it's only a change
+//     $("select").on("change", function () {    
+//         $("div").text("You Have Choosed: " + $(this).val());   // change also working with select and its options when you select the option will start the change
+//     });
+
+// });
