@@ -1635,44 +1635,44 @@ opacity css property work*/
 // event: required, data: optional, function: required
 
 // $(document).ready(function () {
-    // $(".normal").click(function () {
-    //     $(this).hide();
-    // });
+// $(".normal").click(function () {
+//     $(this).hide();
+// });
 
-    // $(".normal").mouseenter(function () {
-    //     $(this).toggleClass("color");
-    // });
+// $(".normal").mouseenter(function () {
+//     $(this).toggleClass("color");
+// });
 
-    // $(".normal").mouseleave(function() {
-    //     $(this).toggleClass("color");
-    // })
-
-
-
-
-    // now example with bind
-    // $(".normal").bind("click", function () {
-    //         $(this).hide();
-    // });
-
-
-
-    // Multi events with bind   only put between events a one white space
-    // $(".normal").bind("mouseenter mouseleave", function() {
-    //     $(this).toggleClass("color")
-    // });
+// $(".normal").mouseleave(function() {
+//     $(this).toggleClass("color");
+// })
 
 
 
 
-    // Event map => i have an element and i have more than one event and each event has its own different action/function
-    // Important to understand the syntax of map events with bind
-    // $(".map").bind({
-    //     click: function() { $(this).text("You Have Clicked Me!")},
-    //     dblclick: function() {$(this).text("You Have Clicked Me Twice")},
-    //     mouseenter: function() {$(this).text("Your Cursor Is on Me!")},
-    //     mouseleave: function() {$(this).text("Your Cursor Is away from Me")}
-    // })
+// now example with bind
+// $(".normal").bind("click", function () {
+//         $(this).hide();
+// });
+
+
+
+// Multi events with bind   only put between events a one white space
+// $(".normal").bind("mouseenter mouseleave", function() {
+//     $(this).toggleClass("color")
+// });
+
+
+
+
+// Event map => i have an element and i have more than one event and each event has its own different action/function
+// Important to understand the syntax of map events with bind
+// $(".map").bind({
+//     click: function() { $(this).text("You Have Clicked Me!")},
+//     dblclick: function() {$(this).text("You Have Clicked Me Twice")},
+//     mouseenter: function() {$(this).text("Your Cursor Is on Me!")},
+//     mouseleave: function() {$(this).text("Your Cursor Is away from Me")}
+// })
 
 
 
@@ -1686,7 +1686,7 @@ opacity css property work*/
 //         $(".custom").trigger("myCustomEvent", ["Alakel", "30"]);
 
 //     });
-    
+
 
 
 //     // another Example with design ----- Important to understand the custom event IMPORTANT IMPORTANT
@@ -1712,80 +1712,112 @@ opacity css property work*/
 // Child Selector => Optional In on() event
 
 // $(document).ready(function() {
-    // old way can you write on() event with
-    // $("body").on("click", ".normal", function() {
-    //     $(this).hide();
-    // });
+// old way can you write on() event with
+// $("body").on("click", ".normal", function() {
+//     $(this).hide();
+// });
 
-    // Modern Syntax can you write on() even with
-    // Single Event with on()
-    // $(".normal").on("click", function() {
-    //     $(this).hide();
-    // }); 
-
-    // Multi Event with on
-    // $(".normal").on("mouseenter mouseleave", function() {
-
-    //     $(this).toggleClass("color");
-    // });
-
-
-    // same previous example but with old way
-    // $("body").on("mouseenter mouseleave", ".normal" ,function () {
-    //     $(this).toggleClass("color");
-    // });
-
-    
-
-    //Custom Event with On()   // make my own custom event as per our example it's a myCustom
-    // $(".custom").on("myCustom", function(event) {
-    //     $(this).hide();
-    // });
-    // // Here you must make trigger to the event my custom 
-    // $("button").on("click", function() {
-    //     $(".custom").trigger("myCustom");
-    // });
-
-
-
-    //another example with custom event but with parameters 
-    // $(".custom").on("myCustom", function(event, myHeight, myWidth, myBack, myColor) {
-    //     $(this).height(myHeight).width(myWidth).css({
-    //         backgroundColor: myBack,
-    //         color: myColor
-    // });
-    // });
-
-
-    // $("button").on("click", function() {
-    //     $(".custom").trigger("myCustom", ["200px", "400px", "#00f", "#f00" ]); // here the values of the myCustom parameters
-
-    // });
+// Modern Syntax can you write on() even with
+// Single Event with on()
+// $(".normal").on("click", function() {
+//     $(this).hide();
+// }); 
 
 
 
 
-    // Event map with on()       IMPORTANT IMPRTANT MAP WITH ON()
 
-    // $(".map").on({
-    //     click: function() {$(this).text("You Have Clicked Me!!")},
-    //     dblclick: function() {$(this).text("You Have Double Clicked Me!!!")},
-    //     mouseenter: function() {$(this).text("The Cursor Hoverd On Me!!")},
-    //     mouseleave: function() {$(this).text("The Cursor Away From Me!!!")}
-    // });
+// Multi Events with on
+// $(".normal").on("mouseenter mouseleave", function() {
+
+//     $(this).toggleClass("color");
+// });
 
 
+// same previous example but with old way
+// $("body").on("mouseenter mouseleave", ".normal" ,function () {
+//     $(this).toggleClass("color");
+// });
 
 
-    //IMPORTANT Example: Future Elements Event with on()
-    // if you want to use on() and effect on future elements that created by jQuery so you must follow the Syntax to call the container of the element its Parent as per below in the second on()
-    // $("button").on("click", function() {
-    //     $("<p>This is New Paragraph</p>").insertAfter(this);
-    // });
 
-    // // Syntax:    $(parent or Container of the element).on("event", "targeted element", function(){})
-    // $("body").on("click","p", function() {
-    //     $(this).fadeOut(1000);
-    // });
+//Custom Event with On()   // make my own custom event as per our example it's a myCustom
+// $(".custom").on("myCustom", function(event) {
+//     $(this).hide();
+// });
+// // Here you must make trigger to the event myCustom 
+// $("button").on("click", function() {
+//     $(".custom").trigger("myCustom");
+// });
+
+
+
+//another example with custom event but with parameters 
+// $(".custom").on("myCustom", function(event, myHeight, myWidth, myBack, myColor) {
+//     $(this).height(myHeight).width(myWidth).css({
+//         backgroundColor: myBack,
+//         color: myColor
+// });
+// });
+
+
+// $("button").on("click", function() {
+//     $(".custom").trigger("myCustom", ["200px", "400px", "#00f", "#f00" ]); // here the values of the myCustom parameters
 
 // });
+
+
+
+
+// Event map with on()       IMPORTANT IMPRTANT MAP WITH ON()
+
+// $(".map").on({
+//     click: function() {$(this).text("You Have Clicked Me!!")},
+//     dblclick: function() {$(this).text("You Have Double Clicked Me!!!")},
+//     mouseenter: function() {$(this).text("The Cursor Hoverd On Me!!")},
+//     mouseleave: function() {$(this).text("The Cursor Away From Me!!!")}
+// });
+
+
+
+
+//IMPORTANT Example: Future Elements Event with on()
+// if you want to use on() and effect on future elements that created by jQuery so you must follow the Syntax to call the container of the element its Parent as per below in the second on()
+// $("button").on("click", function() {
+//     $("<p>This is New Paragraph</p>").insertAfter(this);
+// });
+
+// // Syntax:    $(parent or Container of the element).on("event", "targeted element", function(){})
+// $("body").on("click","p", function() {
+//     $(this).fadeOut(1000);
+// });
+
+// });
+
+
+
+
+//// Prevent Default ======>>>>>> use cases    
+
+// $(document).ready(function () {
+//     // in our example because we have a element and its behaviour to open link and i want to fadeIn the image only so here we want to prevent the default
+
+//     $("a").on("click", function (event) {
+
+//         event.preventDefault();  // Here it means we prevent the default action of a element because we set that in this line
+//         // if you want to do the preventDefault by Vanilla JS you can set the onclick="return false"; inline inside the html tag
+
+//         $("img").fadeIn(500);
+
+//         // isDefaultPrevented the most use cases is with if condition to check if it's default prevented of the default behaviour
+//         if (event.isDefaultPrevented()) {
+//             $("div").text("The Link Is Not Working");
+//         } else {
+//             $("div").text("The Link Is Working");
+//         }
+//     });
+
+// });
+
+
+
