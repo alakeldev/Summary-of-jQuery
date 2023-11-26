@@ -1022,14 +1022,14 @@ opacity css property work*/
 
 
 ////////////////////////////
-// Next  => the next element 
+// Next  => the next element
 
 // $("div, p").click(function () {
 // $(this).next().fadeOut(2000);
 
 // $(this).next().css("border", "5px solid #f00");
 
-// $(this).next().slideToggle(1000);   IMPORTANT IMPORTANT IMPORTANT 
+// $(this).next().slideToggle(1000);   IMPORTANT IMPORTANT IMPORTANT
 
 // $(this).next(".test").slideToggle(1000);   // Here if you clicked on the element it will check on the next element if it has .test class if it has so it will toggle
 
@@ -1044,7 +1044,7 @@ opacity css property work*/
 // $(this).prev().slideToggle(2000);  // same the action of next but it effect not only next element, it will effect on the previous element
 
 // $(this).prev(".test").slideToggle(2000) // here if you click on the element it will check on the previous element if it has .test class
-// if it has so it will apply the .slideToggle on it 
+// if it has so it will apply the .slideToggle on it
 
 
 // $(this).prev(".sa").css("border", "5px solid #00f");
@@ -1054,14 +1054,14 @@ opacity css property work*/
 
 
 /////////////////////////////////
-// next all => it means all the next elements 
+// next all => it means all the next elements
 
 
 // $("div, p").click(function () {
 // $(this).nextAll().css("background", "#00f");
 
 
-// $(this).nextAll(".test").css("background", "#00f"); // here we mention that from the element(exclude) that we clicked on.... check on all next elements 
+// $(this).nextAll(".test").css("background", "#00f"); // here we mention that from the element(exclude) that we clicked on.... check on all next elements
 //if you find any element of them that it has .test class apply and effect on it
 
 
@@ -1086,7 +1086,7 @@ opacity css property work*/
 // $(this).prevAll().css("background", "red");
 
 
-// $(this).prevAll(".test").css("background", "red");  // Here also same nextAll example check on all previous element 
+// $(this).prevAll(".test").css("background", "red");  // Here also same nextAll example check on all previous element
 //to check if it has class .test to effect and apply on it
 
 
@@ -1120,7 +1120,7 @@ opacity css property work*/
 // $(this).prevUntil().css("border", "5px solid #0f0");  // if you didn't specify and value for prevUntil so it's working same prevAll()
 
 
-// $(this).prevUntil(".test").css("background", "#f00");  
+// $(this).prevUntil(".test").css("background", "#f00");
 // here it will start effect and apply backward(previous) on elements until it face an element with a class .test to it will stop there
 
 
@@ -1164,7 +1164,7 @@ opacity css property work*/
 // $("div").eq(1).css("border", "5px solid #f00");   // the second div
 // $("div").eq(-1).css("border", "5px solid #f00");   // the last div
 // $("div").eq(-2).css("border", "5px solid #f00");   // the second div but backward from last
-// $("div").eq(-2).next().css("border", "5px solid #f00");   //it means last div 
+// $("div").eq(-2).next().css("border", "5px solid #f00");   //it means last div
 // $("div").eq(-2).prev().css("border", "5px solid #f00");   //the third div but backward from last
 // $("div").eq(-1).prevAll().css("border", "5px solid #f00");   //it means last item then select all the previous items all
 
@@ -1173,7 +1173,7 @@ opacity css property work*/
 // Filter(you can write here class, element, jQuery Object, and function)
 
 
-// $("div").filter(".jquery").css("border","5px solid #00f");  // target div with a class .jquery 
+// $("div").filter(".jquery").css("border","5px solid #00f");  // target div with a class .jquery
 
 
 // $("div").filter(".jquery").next().css("border", "5px solid #00f");
@@ -1184,11 +1184,11 @@ opacity css property work*/
 
 // $("div").filter(function(alakel) { return alakel === 1;}).css("border","5px solid #00f");
 // in the previouse example here we put a function as parameter for filter and inside the functio nthere is a parameter alakel
-// and we return it as a number 1 so here it means that it return a number 1 and by indexing it's the second div that has 1 indexing 
-// so it will effect on the div with indexing one 
+// and we return it as a number 1 so here it means that it return a number 1 and by indexing it's the second div that has 1 indexing
+// so it will effect on the div with indexing one
 
 
-// $("div").filter(function (alakel) { return alakel === 3; }).css("border", "5px solid #00f"); //here it will return the div number 4 
+// $("div").filter(function (alakel) { return alakel === 3; }).css("border", "5px solid #00f"); //here it will return the div number 4
 
 // $("div").filter(function (alakel) { return alakel === 3; }).next().css("border", "5px solid #00f"); //here it will return the div number 5 because of next()
 
@@ -1222,13 +1222,13 @@ opacity css property work*/
 /*-------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------*/
 
-// Selectors references 
+// Selectors references
 
 // $(document).ready(function() {
 
 // -1:   *
 
-// $("*").click(function () {    // the * here meaning all elements and this is related to * that means all elements 
+// $("*").click(function () {    // the * here meaning all elements and this is related to * that means all elements
 //     $(this).fadeOut(500);
 // });
 
@@ -1296,7 +1296,7 @@ opacity css property work*/
 
 // $("p:last-child").css("border", "5px solid #f00");  // be note here that must be last child for the parent and it must be p type also to be effect
 
-// $("p:last").css("border", "5px solid #f00");        //last element on the page 
+// $("p:last").css("border", "5px solid #f00");        //last element on the page
 
 
 // $("div:first-of-type").css("border","2px solid #f00");   // it will target first element as a type = div inside each parent
@@ -1410,8 +1410,8 @@ opacity css property work*/
 
 // focus
 
-// $("input").focus(); // 1- we choose the element that we want to make focus on it 
-// $(":focus").css("padding","20px");  // here we take the selector reference that take focused element to make effect on it 
+// $("input").focus(); // 1- we choose the element that we want to make focus on it
+// $(":focus").css("padding","20px");  // here we take the selector reference that take focused element to make effect on it
 
 
 
@@ -1435,7 +1435,7 @@ opacity css property work*/
 
 
 // empty
-// $(":empty").css("background", "#080");    // target all empty elements on the page 
+// $(":empty").css("background", "#080");    // target all empty elements on the page
 
 
 // parent
@@ -1458,11 +1458,11 @@ opacity css property work*/
 
 
 
-// : Visible it means all elements visible that you can see it on the page 
+// : Visible it means all elements visible that you can see it on the page
 // $("button").click(function () {
-//     // $(":visible").css("background", "#f00"); //it means all elements visible that you can see it on the page 
+//     // $(":visible").css("background", "#f00"); //it means all elements visible that you can see it on the page
 
-//     // $("div:visible").css("background", "#f00");  // it means all div elements visible that you can see it on the page 
+//     // $("div:visible").css("background", "#f00");  // it means all div elements visible that you can see it on the page
 
 //     // $("div:visible").slideToggle(1000); // the divs visible will hide it on the page
 
@@ -1523,14 +1523,14 @@ opacity css property work*/
 //     // $("[title], [lang]").fadeOut(4000); // all elements that have title and lang attribute make a fadeout on them
 
 
-//     // $("img[alt='image 3'], div[lang='ar']").fadeOut(2000); // here we group two element with set the attribute and its value for each one 
+//     // $("img[alt='image 3'], div[lang='ar']").fadeOut(2000); // here we group two element with set the attribute and its value for each one
 
 
 
 
-//     // below focus on *   any sentence has the word, it no need a specific word stands alon it search with ing with past form no worries 
+//     // below focus on *   any sentence has the word, it no need a specific word stands alon it search with ing with past form no worries
 
-//     // alt* = ' ' Here the * it means that search inside the value of alt attribute on word My    
+//     // alt* = ' ' Here the * it means that search inside the value of alt attribute on word My
 //     $("img[alt*='My']").css("border-radius","50%");
 //     // it means that search inside the value of alt attribute on word Your
 //     $("img[alt*='Your']").css("border-radius", "50%");
@@ -1543,18 +1543,18 @@ opacity css property work*/
 
 
 //     // below focus on ~   here it needs a specific word exactly, here it needs exaclty this word stands alone
-//     $("img[title~='Test 3']").css("border-radius", "50%"); // 
+//     $("img[title~='Test 3']").css("border-radius", "50%"); //
 
 
 
 
-//     // ^   here it means starting with only 
+//     // ^   here it means starting with only
 //     $("div[lang^='fr']").css("color", "green"); //
 
 
 
 
-// // the summary: of part 5 selectors 
+// // the summary: of part 5 selectors
 
 // // 1- [attribute] => [title]
 // // 2- element[attribute] => img[src]
@@ -1677,7 +1677,7 @@ opacity css property work*/
 
 
 
-//     // Custom event ======>>>> i want to make my own events 
+//     // Custom event ======>>>> i want to make my own events
 //     $(".custom").bind("myCustomEvent", function (event, myName, myAge) {
 //         $(this).text("Hello " + myName + "Your Age is: "+ myAge);
 //     });
@@ -1721,7 +1721,7 @@ opacity css property work*/
 // Single Event with on()
 // $(".normal").on("click", function() {
 //     $(this).hide();
-// }); 
+// });
 
 
 
@@ -1745,14 +1745,14 @@ opacity css property work*/
 // $(".custom").on("myCustom", function(event) {
 //     $(this).hide();
 // });
-// // Here you must make trigger to the event myCustom 
+// // Here you must make trigger to the event myCustom
 // $("button").on("click", function() {
 //     $(".custom").trigger("myCustom");
 // });
 
 
 
-//another example with custom event but with parameters 
+//another example with custom event but with parameters
 // $(".custom").on("myCustom", function(event, myHeight, myWidth, myBack, myColor) {
 //     $(this).height(myHeight).width(myWidth).css({
 //         backgroundColor: myBack,
@@ -1797,7 +1797,7 @@ opacity css property work*/
 
 
 
-//// Prevent Default ======>>>>>> use cases    
+//// Prevent Default ======>>>>>> use cases
 
 // $(document).ready(function () {
 //     // in our example because we have a element and its behaviour to open link and i want to fadeIn the image only so here we want to prevent the default
@@ -1820,4 +1820,35 @@ opacity css property work*/
 // });
 
 
+// New Lesson: KeyBoard Event Refernce =>: : keydown, keypress, keyup
 
+
+// $(document).ready(function () {
+
+    // $("input").on("keydown", function() {
+    //     $("div").text("You are going to click on random keyboard key")
+    // });
+
+    // $("input").on("keypress", function () {
+    //     $("div").text("You are clicked on random keyboard key")
+    // });
+
+    // $("input").on("keyup", function () {
+    //     $("div").text("You are finished from clicking on the random keyboard key")
+    // })
+
+
+
+    ///////// Very good example to use inside your project IMPORTANT IMPORTANT
+    // example Important to understand
+//     $("input").on("keyup", function() {
+//         $("div h2").text($(this).val());   // Here important to show what we are writing on the input and show it in the same time inside the div
+//     });
+
+
+//     $("textarea").on("keyup", function() {
+//         $("div p").text($(this).val());   // Here to show what we are writing on the textarea so the preview you can see it inside the div p
+//     });
+
+
+// });

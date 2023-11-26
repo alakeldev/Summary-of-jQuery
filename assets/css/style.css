@@ -363,3 +363,29 @@ div {
     margin: 20px;
     display: none;
 } */
+
+
+
+
+/* New Lesson: KeyBoard Event Refernce=>:: keydown,keypress,keyup */
+
+/* div {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    margin: 10px;
+}
+
+
+input, textarea {
+    display: block;
+    margin: 20px 0;
+    padding: 5px;
+    width: 200px;
+}
+
+textarea {
+    height: 100px;
+} */
