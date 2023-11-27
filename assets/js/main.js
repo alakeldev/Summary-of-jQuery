@@ -2271,3 +2271,46 @@ opacity css property work*/
 //     console.log($("p").position().left);
 //     console.log($("p").position().top);
 // });
+
+
+
+
+// prop()  html/css reference    attributes
+// prop() it will check on the property and return true or false
+// $(document).ready(function () {
+//     $("button").on("click", function(event) {
+//         event.preventDefault();
+
+//         // console.log($("input").prop("disabled"));   // it will return true 
+
+//         // console.log($("input").attr("disabled"));    // it will return disabled
+
+
+//         // $("input").prop("disabled", "disabled");    // you can change the value property here with using prop(property , its new value)
+
+
+//         // $("input").prop("disabled", false);      // here you want to remove it because you set its value as false
+
+
+
+//         // very very important to use group of properties and set its new values (important to focus on this example to uderstand it)
+//         $("input").prop({
+//             "disabled": false,
+//             "name": "username",
+//             "id": "test",
+//         });
+
+
+
+//         console.log($("input").prop("id"));   // it will return on the console  ===>=>=>>=>=>=> test
+//         console.log($("input").prop("name"));   // it will return on the console  ===>=>=>>=>=>=> username
+
+
+//         // with using prop()   you can write the property and its new value that you want it , or you can write attribute then true or false
+
+//     });
+// });
+
+
+
+// replace with html / css reference
