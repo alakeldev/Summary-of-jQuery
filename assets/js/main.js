@@ -2122,5 +2122,22 @@ opacity css property work*/
 
 
 
-// html/css referece - clone   lesson
+// html/css referece - clone  الاستنتساخ lesson
+// clone(false); ===> false as default value here and the false means here that the event don't take copy from it too
+// $(document).ready(function() {
+//     $("button").on("click", function() {
+
+//         $(".main").clone(true).appendTo("body");    // here you take a copy from the element and text exactly same then you want to append to the page
+//                                                 // because of false so it will not take the change color below  to red
+//                                                 // here it changed clone(true) so it will take the event below .css and it will change its color on the new copies when i click on it
+
+
+//     });
+
+//     $(".main").on("click", function() {
+//         $(this).css("color", "#f00")
+//     })
+// });
+
+
 
