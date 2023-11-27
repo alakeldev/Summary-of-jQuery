@@ -2085,7 +2085,25 @@ opacity css property work*/
 
 
 // Submit event Lesson
+// we see this event special inside the form, it has very features and it work with the server direct and through ajax can send the data without make refresh for the page,,,check if conditions and any validations
 
+// $(document).ready(function () {
+//     $("form").submit(function (event) {
+
+//         if ($("input:first").val() === "Confirm") {     // the condition to check on the input 
+
+//             $("span").text("Done, Confirmed!").show();
+
+//             return;
+//         }
+
+
+//         $("span").text("Word Not Confirm!").show().fadeOut(2000)
+
+//         event.preventDefault();        // here you prevent the default action for the submit input 
+
+//     });
+// });
 
 
 
