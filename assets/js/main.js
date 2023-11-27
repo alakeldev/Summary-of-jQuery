@@ -1825,22 +1825,22 @@ opacity css property work*/
 
 // $(document).ready(function () {
 
-    // $("input").on("keydown", function() {
-    //     $("div").text("You are going to click on random keyboard key")
-    // });
+// $("input").on("keydown", function() {
+//     $("div").text("You are going to click on random keyboard key")
+// });
 
-    // $("input").on("keypress", function () {
-    //     $("div").text("You are clicked on random keyboard key")
-    // });
+// $("input").on("keypress", function () {
+//     $("div").text("You are clicked on random keyboard key")
+// });
 
-    // $("input").on("keyup", function () {
-    //     $("div").text("You are finished from clicking on the random keyboard key")
-    // })
+// $("input").on("keyup", function () {
+//     $("div").text("You are finished from clicking on the random keyboard key")
+// })
 
 
 
-    ///////// Very good example to use inside your project IMPORTANT IMPORTANT
-    // example Important to understand
+///////// Very good example to use inside your project IMPORTANT IMPORTANT
+// example Important to understand
 //     $("input").on("keyup", function() {
 //         $("div h2").text($(this).val());   // Here important to show what we are writing on the input and show it in the same time inside the div
 //     });
@@ -1861,16 +1861,16 @@ opacity css property work*/
 
 // $(document).ready(function () {
 
-    // $("input").on("change", function () {
-    //         $("div h2").text($(this).val());   //Here the change will show the text that i'm writing inside the input after remove the focus from the input
-    //     });                                     /// very important note to take care about it
+// $("input").on("change", function () {
+//         $("div h2").text($(this).val());   //Here the change will show the text that i'm writing inside the input after remove the focus from the input
+//     });                                     /// very important note to take care about it
 
-    //     $("textarea").on("change", function() {
-    //         $("div p").text($(this).val());   // must move the focus from the textarea so it will take the text from the textarea
-    //     });
+//     $("textarea").on("change", function() {
+//         $("div p").text($(this).val());   // must move the focus from the textarea so it will take the text from the textarea
+//     });
 
 
-        // Important with select the change will work only because to key press here or keyup,,,,it's only a change
+// Important with select the change will work only because to key press here or keyup,,,,it's only a change
 //     $("select").on("change", function () {    
 //         $("div").text("You Have Choosed: " + $(this).val());   // change also working with select and its options when you select the option will start the change
 //     });
@@ -1935,24 +1935,24 @@ opacity css property work*/
 
 
 // $(document).ready(function () {
-    // with below example the user each time clicked on the paragraph will increase its font size 
-    // $("p").on("click", function() {
-    //     $(this).animate({
-    //         fontSize: "+=3px",
-    //     });
-    // });
+// with below example the user each time clicked on the paragraph will increase its font size 
+// $("p").on("click", function() {
+//     $(this).animate({
+//         fontSize: "+=3px",
+//     });
+// });
 
-    // now the example below if we want to increase its font size only one time: we are going to use one() event instead of on()
+// now the example below if we want to increase its font size only one time: we are going to use one() event instead of on()
 
-    // $("p").one("click", function() {
-    //     $(this).animate({
-    //         fontSize: "+=10",
-    //     });
-    // });
+// $("p").one("click", function() {
+//     $(this).animate({
+//         fontSize: "+=10",
+//     });
+// });
 
 
-    // please be note that one() accepts more than one function and action same as on....as per below example; click dblclick
-    // it will work one time with click .....then one time also with double click 
+// please be note that one() accepts more than one function and action same as on....as per below example; click dblclick
+// it will work one time with click .....then one time also with double click 
 //     $("p").one("click dblclick", function () {
 //         $(this).animate({
 //             fontSize: "+=10",
@@ -1984,4 +1984,45 @@ opacity css property work*/
 
 
 
-// Resize event lesson
+// Resize event lesson  ==>>>>> resize meaning that you are changing the window size ===>>>
+// $(document).ready(function () {
+
+//     // below three lines only to understand meaning of the height and width of the window
+//     // let wid = $(window).width();
+//     // let hei = $(window).height();
+//     // console.log(wid, hei); //here will auto recalculate your size window width and height
+
+
+
+//     // example
+//     // $(window).on("resize", function () {
+//     //     // let wid = $(window).width();
+//     //     // let hei = $(window).height();
+//     //     // console.log(wid, hei);
+
+//     //     // if(wid > 1000) {
+//     //     //     console.log("Your Window Width is more than 1000");
+//     //     // }
+//     // });
+
+
+//     // Important to understand the line below to know how to control the height of the element equal to 100%
+//     // $("section").height($(window).height());    // IMPORTANT IMPORTANT IF YOU WANT OT MAKE THE SECTION HEIGHT EQUAL TO WINDOW HEIGHT
+
+//     // Here with this line above please be note that when you make change you need to reload to effect on the hieght of the element section
+
+//     // so no deal with this issue you need to use resize event so it will effect on the element each time resize the window as per below
+
+
+// //     $(window).on("resize", function() {
+// //         $("section").height($(window).height());  // Important auto resizing IMPORTANT IMPORTANT to understand
+
+
+// //         // $("section").height($(window).height() - 300); // also you can use + or - to cut exact amout of px from the height or width 300px in our example
+// //     });
+
+
+// //     //Note:   very useful when you want to your landing page take the full height of your window so it will be perfect 
+
+
+// });
