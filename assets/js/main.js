@@ -2184,3 +2184,29 @@ opacity css property work*/
 
 
 // Has Class html / css reference 
+// check if the element has specific class or not and make some action depending on this check
+
+// $(document).ready(function() {
+//     // it will check on all li elements and check which one has class active
+
+//     // $("li").each(function() {
+//     //     if($(this).hasClass("active")) {
+//     //         $(this).css("color", "#f00");
+//     //     }
+//     // });
+
+
+
+//     //another example: normal example
+//     $("li").each(function() {
+//         $("li").each(function () {
+//             if ($(this).hasClass("active")) {
+//                 $(this).parent().parent().css("color", "#f00");
+//             };
+//         });
+//     });
+// });
+
+
+
+// offset html / css reference
