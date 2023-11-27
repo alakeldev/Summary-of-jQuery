@@ -1876,3 +1876,55 @@ opacity css property work*/
 //     });
 
 // });
+
+
+
+// Blur and Focus section
+// $(document).ready(function () {
+
+//     // focus
+//     // $("input").on("focus", function() {
+//     //     $("div span").fadeIn(1000, function() {
+//     //         $(this).fadeOut(2000);
+//     //     }).text("Your Cursor Focusing on the Input");
+
+//     // });
+
+
+
+
+//     // blur
+//     // $("input").on("blur", function () {
+//     //     $("div span").fadeIn(1000, function () {
+//     //         $(this).fadeOut(2000);
+//     //     }).text("Your are taking the Focusing away from the Input");
+//     // });
+
+
+
+//     // please be note that the focus and blur are the opposite action from each other
+//     // example to understand the blur more 
+
+//     $("input").on("blur", function() {
+
+//         if($(this).val() === "Alakel") {
+//             $("div span").fadeIn(2000, function() {
+//                 $(this).fadeOut(2000);
+//             }).text("Your Value is Equal to Alakel")
+//         } else {
+//             $("div span").fadeIn(2000, function() {
+//                 $(this).fadeOut(2000)
+//             }).text("Hello UnKnown Person")
+//         }
+//     });
+
+
+
+
+//     // please be Note to check on the input length Characters => $(this).val().length() >= 10  
+//     // you can check on the input form if the character number ok so you can preventDefault if the condition false
+
+// });
+
+
+
