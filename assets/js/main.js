@@ -2026,3 +2026,29 @@ opacity css property work*/
 
 
 // });
+
+
+
+
+// Scroll() event lesson
+// it means when you scroll down and up inside the webpage ,,,,,, important when you want to use it inside animation or even in responsive
+
+
+//Important to use with your projects very important example
+// $(document).ready(function() {
+//     $(window).on("scroll", function() {
+//         let sc = $(window).scrollTop();     // Here we used scrollTop 
+//         console.log(sc);
+
+//         if(sc > 1000) {
+//             $("div").fadeIn();
+//         } else {
+//             $("div").fadeOut();
+//         }
+//     });
+
+
+
+//     // please be note that if you don't use scroll event so this needs to reload the page to effect and make to check on it so
+//     // the scroll event important to use if you want to check without reload the page 
+// });
