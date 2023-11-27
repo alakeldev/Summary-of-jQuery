@@ -1960,3 +1960,28 @@ opacity css property work*/
 //     });
 // });
 
+
+
+
+
+// Select() event lesson 
+
+// $(document).ready(function() {
+//     // $("textarea").select();     // Here it will select on all the text inside the textarea (Auto Select on the text)
+
+//     //Example: 
+//     // $("textarea").on("click", function() {
+//     //     $(this).select()
+//     // });
+
+
+//     // Example: select(call back function that will call when you select   IMPORTANT)
+//     $("textarea").select(function() {
+//         $(this).after("Text Copied");
+//     });
+// });
+
+
+
+
+// Resize event lesson
