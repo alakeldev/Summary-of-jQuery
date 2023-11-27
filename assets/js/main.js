@@ -2108,3 +2108,19 @@ opacity css property work*/
 
 
 
+
+////// Delay Event lesson (effect reference)  // it accepts delay( integer(MS) or slow,fast as string)
+// if i want to make delay in action or effect to happen
+
+// $(document).ready(function() {
+//     $("button").on("click", function() {
+//         $("span").text("Hello Message").fadeIn(1000).delay(5000).fadeOut(1000); // Here it will make a delay 5 seconds before start to fadeOut and hide it
+//     });
+// });
+
+
+
+
+
+// html/css referece - clone   lesson
+
