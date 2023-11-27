@@ -2141,3 +2141,46 @@ opacity css property work*/
 
 
 
+// Detach()   HTML/CSS reference
+// it means if you want to saperate section/element from the page content remove is similar to detach but detach will leave all data and events that related to this element
+
+// $(document).ready(function() {
+    // let ele = $("div");
+    // $("#remove").on("click", function() {
+    //     ele.remove();
+    // });
+
+    // $("#add").on("click", function () {
+    //     $("body").prepend(ele);
+    // });
+
+    // ele.on("click", function() {
+    //     $(this).css("color", "#00f")
+    // });
+    // as per the full example above:
+    // now if you clicked on remove button so it will remove the ele that represent the div so if you add it again and you click on it
+    // because you remove it from the page you remove all the data and its events with this remove action so it will not change its color to blue after you added it again
+
+
+    // now it's coming the important of detach() effect to use it instead of remove()...check below exmaple:
+
+//     let ele = $("div");
+//     $("#remove").on("click", function () {
+//         ele.detach();
+//     });
+
+//     $("#add").on("click", function () {
+//         $("body").prepend(ele);
+//     });
+
+//     ele.on("click", function () {
+//         $(this).css("color", "#00f")
+//     });
+
+//     // when you add it again, because of detach() the element has its effect and data and events so normal will work after back to the page
+// });
+
+
+
+
+// Has Class html / css reference 
