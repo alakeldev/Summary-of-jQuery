@@ -2210,3 +2210,44 @@ opacity css property work*/
 
 
 // offset html / css reference
+// 
+
+$(document).ready(function() {
+
+    // below not example it's a details only to understand it
+
+    // console.log($("div").offset());   // it return to the console an abject 
+
+    // $("div").offset({
+    //     left: 200,
+    //     top: 200
+    // });
+    // console.log($("div").offset());
+
+    // console.log($("div").offset().top);
+    // console.log($("div").offset().left);
+
+
+
+
+
+
+    //Example Important to understand
+
+//     $(window).scroll(function() {
+//         console.log("Scroll Top = " + $(this).scrollTop());
+
+//         console.log("div offset top = " + $("div").offset().top);
+
+
+//         let scrolling = $(this).scrollTop(),
+//             divOffset = $("div").offset().top;
+
+//         if (scrolling >= divOffset) {
+//             // $("div").fadeOut();
+
+//             $("div").css("background-color", "#00f");
+//         };
+//     });
+
+// });
