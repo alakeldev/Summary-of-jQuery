@@ -2052,3 +2052,41 @@ opacity css property work*/
 //     // please be note that if you don't use scroll event so this needs to reload the page to effect and make to check on it so
 //     // the scroll event important to use if you want to check without reload the page 
 // });
+
+
+
+
+
+// Page x = x axis Horizintal and Page y = y axis Vertical  lesson 
+
+// $(document).ready(function () {
+//     // example:
+//     // $("html").mousemove(function(event) {
+//     //     $("span").text("X-Axis: " + event.pageX + " Y-Axis: " + event.pageY)
+//     // });
+
+
+//     // example:
+//     $("html").click(function (event) {
+//         $(".circle")
+//             .show().offset({         // offset: you can control element place and use its position on the page to show other elements control other events....
+//                 left: event.pageX,
+//                 top: event.pageY
+//             });
+//     });
+//     // in the above example we control to show the circle where we are click on the page exactly
+
+// });
+
+
+
+
+
+
+
+// Submit event Lesson
+
+
+
+
+
