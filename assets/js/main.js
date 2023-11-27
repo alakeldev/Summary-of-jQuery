@@ -2212,7 +2212,7 @@ opacity css property work*/
 // offset html / css reference
 // 
 
-$(document).ready(function() {
+// $(document).ready(function() {
 
     // below not example it's a details only to understand it
 
@@ -2250,4 +2250,24 @@ $(document).ready(function() {
 //         };
 //     });
 
+// });
+
+
+
+// Position html / css reference 
+
+    // offset will give you the offset sizes left and top related to the document starting from 0 0 
+
+// $(document).ready(function () {
+//     console.log($("p").offset());    // top=> 200 and left => 70  related to the document 
+
+//     console.log($("p").position());  // top => 100 and left => 20 related to the parent only not care about document object
+
+
+//     // the summary the offset and position same action but offset will bring the offest values of the element related and depending between the element the document object
+//     // but the poisiton the values will be depending on the parent element of this element
+
+
+//     console.log($("p").position().left);
+//     console.log($("p").position().top);
 // });

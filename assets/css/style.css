@@ -545,3 +545,26 @@ div {
 } */
 
 
+/* Position html/css reference */
+
+/* * {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    background-color: #f00;
+    color: #fff;
+    height: 300px;
+    position: relative;
+    margin: 100px 0 0 50px;
+
+}
+
+p {
+    position: absolute;
+    left: 20px;
+    top: 100px;
+    background-color: #00f;
+    height: 100px;
+} */
