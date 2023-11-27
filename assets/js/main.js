@@ -1928,3 +1928,35 @@ opacity css property work*/
 
 
 
+
+// One() event section
+
+// please be note that one() is same on() event but the difference between both than one() event will do it one time only
+
+
+// $(document).ready(function () {
+    // with below example the user each time clicked on the paragraph will increase its font size 
+    // $("p").on("click", function() {
+    //     $(this).animate({
+    //         fontSize: "+=3px",
+    //     });
+    // });
+
+    // now the example below if we want to increase its font size only one time: we are going to use one() event instead of on()
+
+    // $("p").one("click", function() {
+    //     $(this).animate({
+    //         fontSize: "+=10",
+    //     });
+    // });
+
+
+    // please be note that one() accepts more than one function and action same as on....as per below example; click dblclick
+    // it will work one time with click .....then one time also with double click 
+//     $("p").one("click dblclick", function () {
+//         $(this).animate({
+//             fontSize: "+=10",
+//         });
+//     });
+// });
+
