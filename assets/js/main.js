@@ -2313,4 +2313,31 @@ opacity css property work*/
 
 
 
+
 // replace with html / css reference
+
+// very very important example to understand replaceWith focus on below example:
+
+// $(document).ready(function() {
+//     // $("div").replaceWith("Hello jQuery"); // with this example it will replace the text of the div with new value hello jQuery
+
+
+//     $("div").on("click", function() {
+//         $(this).replaceWith("<input type='text' value='" + $(this).text() + "'>")
+
+//         $("button").fadeIn();
+//     });
+
+//     $("button").on("click", function() {
+//         $("input").replaceWith("<div>" + $("input").val() + "</div>")
+
+
+//         $("button").fadeOut();
+//     });
+
+
+
+//     // very important note related to replaceWith() ===> replaceWith will take the element and remove it event handler all the event will remove with using replaceWith
+//     // in our example you cannot clicked on the div to edit the input again after you did it one because it will remove all the events handler on that element
+
+// });
