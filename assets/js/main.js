@@ -2514,6 +2514,28 @@ opacity css property work*/
 //     });
 
 
+// });
 
+
+
+
+
+
+// End() traversing reference
+// it will close the chain code that you wrote and it will return the element to its first status 
+
+
+// $(document).ready(function() {
+//     // wihtout using end()
+//     // $("div").find("span").css("color", "#00f");
+//     // $("div").find("strong").css("color", "#f00");
+//     // $("div").css("font-weight", "bold");
+
+
+//     // but i want to make the three lines above in one chain code using end()   here we ignore to write again $("div") because with writing end() it return to us the first status of div as per below
+//     // with using end()
+//     $("div").find("span").css("color", "#00f").end()
+//         .find("strong").css("color", "#f00").end()
+//         .css("font-weight", "bold");
 
 // });
