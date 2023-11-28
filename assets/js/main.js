@@ -2380,3 +2380,21 @@ opacity css property work*/
 //     })
 
 // });
+
+
+
+//  Wrap and unWrap lesson
+// use to put a holder to catch the element =====>>>>> to put a parent catch the child   wrap the element ..........unwrap to remove the wrap
+
+// $(document).ready(function() {
+//     $(".add").on("click", function() {
+//         $("span").wrap("<div></div>");     // must be add a html structure not a text 
+//     });
+
+
+
+//     $(".remove").on("click", function() {
+//         $("span").unwrap();      // to remove the wrap of the span element
+//     });
+
+// });
