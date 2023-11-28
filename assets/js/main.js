@@ -2398,3 +2398,29 @@ opacity css property work*/
 //     });
 
 // });
+
+
+
+
+
+
+// Each()    traversing reference Lesson
+// $(document).ready(function () {
+//     // wihtout using each()
+//     // $("li").on("click", function() {
+//     //     if($(this).hasClass("test")) {
+//     //         $(this).css("color", "#00f");
+//     //     }
+//     // })
+
+
+//     // how you want to check on each li without click =======>>>>>> with using each()
+//     // it will check for you without making the click action and will target the li which has test class and make the action on it
+
+//     $("li").each(function () {
+//         if ($(this).hasClass("test")) {
+//             $(this).css("color", "#00f");
+//         }
+//     })
+
+// });
