@@ -2446,3 +2446,74 @@ opacity css property work*/
 
 //     $("p, h2").has(".test, span").css("color", "#f00"); // check on any p and h2 that has child element with class .test or only a span
 // });
+
+
+
+
+// is() html / css traversing reference
+
+// $(document).ready(function() {
+//     //Example:
+//     // $("span").on("click", function() {
+//     //     if($(this).parent().is("div")) {
+//     //         console.log("Yes the Parent of span is Div");
+//     //     }
+//     // });
+
+
+
+
+//     // Example;
+//     // $("span").on("click", function () {
+//     //     if ($(this).is("span")) {
+//     //         console.log("Yes this is span");
+//     //     }
+//     // });
+
+
+//     // Example: to show that you can check more than one element 
+//     // $("span").on("click", function () {
+//     //     if ($(this).parent().is("div, p")) {      // here we want to check that the parent of span is div or p
+//     //         console.log("Yes the Parent of span is Div or p");
+//     //     }
+//     // });
+
+
+
+
+//     // another Example to check using class name 
+//     // $("span").on("click", function () {
+//     //     if ($(this).parent().is(".par")) {      
+//     //         console.log("Yes the Parent of span is has class .par");
+//     //     }
+//     // });
+
+
+
+//     // Example: using is to check on element if it's first child ,,,,also you can use first of type and last child ........pesudo classes
+
+//     // $("span").on("click", function() {
+//     //     if($(this).is(":first-child, :last-child")) {    
+//     //         console.log("Yes This is the first span or last span");
+//     //     }
+//     // });
+
+
+
+
+//     // the most important using of is()========>>>>>>>>>>>> with conditions statements *important 
+
+
+
+
+//     // another example:    using :contains('') with is
+//     $("span").on("click", function () {
+//         if ($(this).parent().is(":contains('jQuery')")) {    // check on the parent of span that if it'S contain jQuery word
+//             console.log("Yes the parent of span has jQuery word inside it");
+//         }
+//     });
+
+
+
+
+// });
