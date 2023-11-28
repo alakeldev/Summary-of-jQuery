@@ -2424,3 +2424,25 @@ opacity css property work*/
 //     })
 
 // });
+
+
+
+// Has() html / css Traversing referene
+// has is similar to hasClass but with has you can check has specific class or element,,,,, with different rules 
+
+// $(document).ready(function() {
+//     // $("p").has("strong").css("color", "#f00");      // will search on paragraph and inside this paragraph has a span so it will make the effect on 
+
+
+//     // $("p").has("strong, span").css("color", "#f00");   // multi check as our example check paragraph that has strong and span or even one of them
+
+
+//     // $("p").has(".test1").css("color", "#f00");   // check on paragraph that its child has a class .test1  to make the effect
+
+
+
+//     // $("p, h2").has(".test1").css("color", "#f00");  // check on any p and h2 on the page that has child its class .test1 make the effect on
+
+
+//     $("p, h2").has(".test, span").css("color", "#f00"); // check on any p and h2 that has child element with class .test or only a span
+// });
