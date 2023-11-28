@@ -580,3 +580,27 @@ p {
 button {
     display: none;
 } */
+
+
+
+
+/* SCroll top/left Important example Lesson */
+
+
+/* body {
+    height: 4000px;
+
+}
+
+
+div {
+    height: 600px;
+    background-color: #080;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+.test-lesson {
+    opacity: 0;    Opacity = 0 is same as visibility = hidden  the element will be on the work flow but it's hidden
+} */

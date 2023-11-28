@@ -2341,3 +2341,42 @@ opacity css property work*/
 //     // in our example you cannot clicked on the div to edit the input again after you did it one because it will remove all the events handler on that element
 
 // });
+
+
+
+
+
+// SCroll top / left Important example Lesson
+
+// $(document).ready(function() {
+
+    //Important example to focus on to understand the offset and scrollTop   important 
+    // $(window).scroll(function() {
+    //     console.log($(this).scrollTop());
+
+    //     console.log("Test Lesson offset = " + $(".test-lesson").offset().top);
+
+
+    //     if($(window).scrollTop() >= $(".test-lesson").offset().top) {
+    //         $(".test-lesson").animate({
+    //             opacity: 1,
+    //         }, 1000);
+    //     }
+    // });
+
+
+    
+    // line below is just an info and data to understand
+    // $(window).scrollTop(700);    // here you can use it if you want to set a number of px: when the page loaded will take you there on the page directly
+
+
+
+
+    // another example
+//     $("button").on("click", function() {
+//         // $(window).scrollTop(0);       // this button will take you to the top page
+
+//         $(window).scrollTop($(".test-lesson").offset().top);
+//     })
+
+// });
